@@ -20,7 +20,6 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-
 <!-- //Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all"> 
@@ -80,11 +79,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		<div class="banner-info">
 			<div class="container">	 
 				<div class="banner-text">
-					<h1><a href="index.jsp"> Knack</a></h1>
-					<ul class="wthree-bnr-text">
-						<li><i class="fa fa-phone" aria-hidden="true"> </i>  +01 111 222 3333</li>
-						<li><i class="fa fa-envelope" aria-hidden="true"></i><a href="mailto:info@example.com"> mail@example.com</a></li>
-					</ul>
+					<h1><a href="index.jsp"> Welcome to Harbin Institute of Technology</a></h1>
 					<div class="banner-icons">
 						<ul class="social"> 
 							<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>

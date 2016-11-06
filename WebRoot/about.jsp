@@ -71,8 +71,7 @@
 					<li><a href="index.jsp" data-hover="Home">Home</a></li>
 					<li><a href="about.jsp" class="active"> About</a></li>
 					<li><a href="news.jsp" data-hover="News">News</a></li>
-					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
-					</li>
+					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a></li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
 					<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
 				</ul>
