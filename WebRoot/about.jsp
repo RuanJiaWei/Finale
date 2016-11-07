@@ -241,7 +241,6 @@
 					<div class="clearfix"></div>
 				</div>
 
-				<div class="team-row">
 					<div class="col-md-3 team-grids">
 						<div class="team-agile-img">
 							<a href="#"><img src="images/t5.jpg" alt="img"> </a>
@@ -286,13 +285,17 @@
 						</div>
 					</div>'
 					<div class="clearfix"></div>
-				</div>
+				
 
 			</div>
 		</div>
 	</div>
-	<!-- //team -->
-	<!-- address -->
+	<div class="HITicon">
+		<div class="container">
+			<img alt="" src="images/img7.jpg">
+		</div>
+		<div class="clearfix"></div>
+	</div>
 	<div class="address">
 		<div class="container">
 			<ul>
@@ -305,22 +308,7 @@
 			</ul>
 		</div>
 	</div>
-	<!-- //address -->
-	<!-- footer-icons -->
-	<div class="footer-icons">
-		<div class="container">
-			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
-			</ul>
-
-		</div>
-	</div>
-	<!-- //footer-icons -->
-	<!-- footer -->
+	
 	<div class="footer">
 		<div class="container">
 			<div class="footer-left">

@@ -69,22 +69,22 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" class="active">Home</a></li>
-					<li><a href="about.jsp" data-hover="About"> About</a></li>
-					<li><a href="news.jsp" data-hover="News">News</a></li>
-					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
+					<li><a href="index.jsp" class="active">主页</a></li>
+					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a></li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
 					</li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
-					<li><a href="login/index.jsp" data-hover="Login">Login</a></li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		</nav>
 	</div>
-	<!-- //top-nav -->
-	<!-- banner -->
+	
+	
 	<div class="banner">
 		<div class="banner-info">
 			<div class="container">
@@ -101,8 +101,9 @@
 			</div>
 		</div>
 	</div>
-	<!-- //banner -->
-	<!-- welcome -->
+	
+	
+	
 	<div class="welcome">
 		<div class="container">
 			<h3 class="agileits-title">Welcome to</h3>
@@ -128,8 +129,8 @@
 			</div>
 		</div>
 	</div>
-	<!-- //welcome -->
-	<!-- services -->
+	
+	
 	<div class="services">
 		<div class="container">
 			<h3 class="agileits-title">Services</h3>
@@ -220,8 +221,13 @@
 			</div>
 		</div>
 	</div>
-	<!-- //features -->
-	<!-- address -->
+	
+	<div class="hit icom">
+		<div class="container">
+			<img alt="" src="images/img7.jpg">
+		</div>
+	</div>
+
 	<div class="address">
 		<div class="container">
 			<ul>
@@ -234,22 +240,8 @@
 			</ul>
 		</div>
 	</div>
-	<!-- //address -->
-	<!-- footer-icons -->
-	<div class="footer-icons">
-		<div class="container">
-			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
-			</ul>
-
-		</div>
-	</div>
-	<!-- //footer-icons -->
-	<!-- footer -->
+	
+	
 	<div class="footer">
 		<div class="container">
 			<div class="footer-left">

@@ -66,17 +66,17 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center cl-effect-15">
-						<li><a href="index.jsp" data-hover="Home">主页</a>
+						<li><a href="index.jsp" data-hover="主页">主页</a>
 						</li>
-						<li><a href="about.jsp" data-hover="About">关于我们</a>
+						<li><a href="about.jsp" data-hover="关于我们">关于我们</a>
 						</li>
 						<li><a href="news.jsp" class="active">新闻</a>
 						</li>
-						<li><a href="portfolio.jsp" data-hover="Portfolio">通知通告</a>
+						<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
 						</li>
 						<li><a href="codes.jsp" data-hover="Codes">Codes</a>
 						</li>
-						<li><a href="contact.jsp" data-hover="Contact">联系我们</a>
+						<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
 						</li>
 					</ul>
 					<div class="clearfix"></div>
@@ -91,49 +91,48 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="banner-text">
 					<h1>
 						<a href="index.jsp"> HIT news</a>
-						<br><br><br><br><br>
+						<br><br><br><br>
 					</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- //banner -->
-	<!-- news -->
+
 	<div class="news">
 		<div class="container">
 			<h3 class="agileits-title">News</h3>
 			<div class="news-info">
+			
 				<div class="col-md-4 news-grids">
-					<h4>
+					<h4 data-hover="august">
 						<span>13/16</span>August
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
-					<a href="single.jsp" class="button12"><span>Read More</span>
+					<p>今天CMU的图灵教授来哈工大开讲座</p>
+					<a href="single.jsp" class="button12" data-hover="Read More"><span>Read More</span>
 					</a>
 				</div>
+				
+				
 				<div class="col-md-4 news-grids">
 					<h4>
 						<span>10/16</span>August
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
+					<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
 					<a href="single.jsp" class="button12"><span>Read More</span>
 					</a>
+					
 				</div>
+				
 				<div class="col-md-4 news-grids">
 					<h4>
 						<span>05/16</span>Sep
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
+					<p>工大学生薛霸在Harvard交流心得</p>
 					<a href="single.jsp" class="button12"><span>Read More</span>
 					</a>
 				</div>
-				<div class="col-md-4 news-grids news-grids-bottom">
+				
+				<div class="col-md-4 news-grids news-girds-bottom">
 					<h4>
 						<span>23/16</span>Oct
 					</h4>
@@ -143,16 +142,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<a href="single.jsp" class="button12"><span>Read More</span>
 					</a>
 				</div>
+				
 				<div class="col-md-4 news-grids  news-grids-bottom">
 					<h4>
 						<span>18/16</span>Oct
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
+					<p>东京大学留学生在工大生活</p>
 					<a href="single.jsp" class="button12"><span>Read More</span>
 					</a>
 				</div>
+				
 				<div class="col-md-4 news-grids  news-grids-bottom">
 					<h4>
 						<span>22/16</span>NOv
@@ -163,12 +162,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<a href="single.jsp" class="button12"><span>Read More</span>
 					</a>
 				</div>
+				
 				<div class="clearfix"></div>
 			</div>
 		</div>
 	</div>
-	<!-- //news -->
-	<!-- address -->
+
+
+	<div class="school-icon">
+		<div class="container">
+			<div class="col-md-10">
+				<img alt="" src="images/img7.jpg" align="middle">
+			</div>
+			<div class="clearfix"></div>
+		</div>
+	</div>
+	
+	
 	<div class="address">
 		<div class="container">
 			<ul>
@@ -182,25 +192,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</ul>
 		</div>
 	</div>
-	<!-- //address -->
-	<!-- footer-icons -->
-	<div class="footer-icons">
-		<div class="container">
-			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a>
-				</li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a>
-				</li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a>
-				</li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a>
-				</li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a>
-				</li>
-			</ul>
+	
 
-		</div>
-	</div>
 	<!-- //footer-icons -->
 	<!-- footer -->
 	<div class="footer">
@@ -210,7 +203,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>
