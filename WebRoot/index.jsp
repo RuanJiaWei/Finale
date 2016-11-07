@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -227,6 +227,27 @@
 			<img alt="" src="images/img7.jpg">
 		</div>
 	</div>
+
+
+	<!--it is a test-->	
+	<div class="test">
+		<div class="container"> 
+			<div class="test-row">
+				<div class="col-md-4 test-girds">
+					<p>hello world</p>
+				</div>
+				<div class="col-md-4 test-girds">
+					<h3>i am comming</h3>
+				</div>
+				<div class="col-md-4 test-girds">
+					<h4>okok</h4>
+				</div>
+				<div class="clearfix"></div>
+			</div>
+		</div>
+	</div>
+	
+
 
 	<div class="address">
 		<div class="container">
