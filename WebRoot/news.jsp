@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -60,23 +60,23 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle collapsed"
 						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						Menu</button>
+						Menu
+					</button>
 				</div>
 				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse"
-					id="bs-example-navbar-collapse-1">
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center cl-effect-15">
-						<li><a href="index.jsp" data-hover="Home">Home</a>
+						<li><a href="index.jsp" data-hover="Home">主页</a>
 						</li>
-						<li><a href="about.jsp" data-hover="About">About</a>
+						<li><a href="about.jsp" data-hover="About">关于我们</a>
 						</li>
-						<li><a href="news.jsp" class="active">News</a>
+						<li><a href="news.jsp" class="active">新闻</a>
 						</li>
-						<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
+						<li><a href="portfolio.jsp" data-hover="Portfolio">通知通告</a>
 						</li>
 						<li><a href="codes.jsp" data-hover="Codes">Codes</a>
 						</li>
-						<li><a href="contact.jsp" data-hover="Contact">Contact</a>
+						<li><a href="contact.jsp" data-hover="Contact">联系我们</a>
 						</li>
 					</ul>
 					<div class="clearfix"></div>
@@ -84,14 +84,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>
 		</nav>
 	</div>
-	<!-- //top-nav -->
-	<!-- banner -->
+
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">
 				<div class="banner-text">
 					<h1>
-						<a href="index.jsp"> Knack</a>
+						<a href="index.jsp"> HIT news</a>
+						<br><br><br><br><br>
 					</h1>
 				</div>
 			</div>

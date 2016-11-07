@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -20,7 +20,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-
 <!-- //Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet"
 	media="all">
@@ -34,11 +33,7 @@
 <link
 	href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
 	rel='stylesheet' type='text/css'>
-<!-- //web-fonts -->
-<!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
-<!-- //font-awesome icons -->
-<!-- start-smooth-scrolling -->
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -55,7 +50,6 @@
 <!-- //end-smooth-scrolling -->
 </head>
 <body>
-	<!-- top-nav -->
 	<div class="top-nav">
 		<nav class="navbar navbar-default">
 		<div class="container">
@@ -71,26 +65,33 @@
 					<li><a href="index.jsp" data-hover="Home">Home</a></li>
 					<li><a href="about.jsp" class="active"> About</a></li>
 					<li><a href="news.jsp" data-hover="News">News</a></li>
-					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a></li>
+					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
+					</li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
 					<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
+					<li><a href="login/index.jsp" data-hover="Login">Login</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		</nav>
 	</div>
-	<!-- //top-nav -->
-	<!-- banner -->
+
 	<div class="banner about-banner">
 		<div class="banner-info">
+
 			<div class="container">
+
 				<div class="banner-text">
 					<h1>
-						<a href="index.jsp"> Knack</a>
+						<a href="index.jsp">We are</a>
+						<br>
+						<a href="index.jsp"> HITer</a>
 					</h1>
 				</div>
+
 			</div>
+
 		</div>
 	</div>
 	<!-- //banner -->
@@ -106,7 +107,7 @@
 							<ul id="myTab" class=" nav-tabs" role="tablist">
 								<li role="presentation" class="active"><a href="#home"
 									id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
-									aria-expanded="true">Our Goal</a></li>
+									aria-expanded="true">Introduction</a></li>
 								<li role="presentation"><a href="#carl" role="tab"
 									id="carl-tab" data-toggle="tab" aria-controls="carl">
 										History</a></li>
@@ -116,39 +117,35 @@
 								<div role="tabpanel" class="tab-pane fade in active" id="home"
 									aria-labelledby="home-tab">
 									<div class="tabcontent-grids">
-										<p>Duis aute irure dolor in reprehenderit in voluptate
-											velit esse cillum dolore eu fugiat nulla pariatur. Excepteur
-											sint occaecat cupidatat non proident, sunt in culpa qui
-											officia deserunt mollit anim id est laborum sed lectus
-											tellus, sodales id elit a, feugiat porttitor nulla.</p>
+										<p>  哈工大在长期的办学过程中，形成了“规格严格，功夫到家”的校训，
+										以朴实严谨的学风培养了大批优秀人才，以追求卓越的创新精神创造了丰硕的科研成果。
+										学校以适应国家需要、服务国家建设为己任，形成了以航天特色为主，拓宽通用性为准则，
+										充分发挥学科交叉、融合的优势，形成了由重点学科、新兴学科和支撑学科构成的较为完善的学科体系，
+										涵盖了哲学、经济学、法学、教育学、文学、历史学、理学、工学、管理学、艺术学等10个门类。
+										学校现有9个国家重点学科一级学科，6个国家重点学科二级学科。在教育部第三轮学科评估中，
+										学校有10个一级学科排名位居全国前五位，其中力学学科排名全国第一。
+										材料科学、工程学、物理学、化学、计算机科学、环境与生态学、数学、生物学与生物化学等8个学科进入ESI全球前1%的研究机构行列，
+										其中材料科学、工程学已进入全球前1‰的研究机构行列。</p>
 										<ul>
-											<li><i class="fa fa-check-square-o"></i> Sed tincidunt
-												lorem sed</li>
-											<li><i class="fa fa-check-square-o"></i> Excepteur sint
-												occaecat</li>
-											<li><i class="fa fa-check-square-o"></i> Duis aute irure
-												dolor in</li>
-											<li><i class="fa fa-check-square-o"></i> Sed tincidunt
-												lorem sed</li>
+											<li><i class="fa fa-check-square-o"></i>首批985工程大学</li>
+											<li><i class="fa fa-check-square-o"></i>首批211工程大学</li>
+											<li><i class="fa fa-check-square-o"></i>中国常春藤C9联盟成员 </li>
+											<li><i class="fa fa-check-square-o"></i>卓越大学联盟</li>
 										</ul>
 									</div>
 								</div>
 								<div role="tabpanel" class="tab-pane fade" id="carl"
 									aria-labelledby="carl-tab">
 									<div class="tabcontent-grids">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing
-											elit. Sed tincidunt lorem sed velit fermentum
-											lobortis.Excepteur sint occaecat cupidatat non proident, sunt
-											in culpa qui officia deserunt mollit, Excepteur sint occaecat
-											cupidatat non proident, sunt in culpa qui officia deserunt
-											mollit anim anim id est laborum. Fusce eu semper lacus, eget
-											placerat mauris. Sed lectus tellus, sodales id elit a,
-											feugiat porttitor nulla. Sed porta magna vitae nisl vulputate
-											lacinia. Morbi malesuada sollicitudin tortor, vitae pharetra
-											nunc lacinia eget. Nulla ornare purus nunc, ut dapibus leo
-											sodales adipiscing. Praesent sit amet justo diam. Quisque
-											sagittis egestas sem vitae vestibulum. Quisque nec lacus
-											ornare, volutpat arcu in, lacinia dolor.</p>
+										<p>1920年，中东铁路管理局为培养工程技术人员创办了哈尔滨中俄工业学校——即哈尔滨工业大学的前身，
+										学校成为中国近代培养工业技术人才的摇篮。新中国成立后，
+										哈尔滨工业大学成为全国学习前苏联高等教育办学模式的两所大学之一，
+										此后学校一直得到国家的重点建设。
+										2000年，同根同源的哈尔滨工业大学、哈尔滨建筑大学合并组建新的哈尔滨工业大学。
+										如今，学校已经发展成为一所以理工为主，理、工、管、文、经、法等多学科协调发展的国家重点大学。
+										学校坐落于素有“东方小巴黎”和“东方莫斯科”之称的冰城夏都哈尔滨市，
+										同时在山东省威海市和广东省深圳市分别设有哈尔滨工业大学威海校区和哈尔滨工业大学深圳校区（筹），
+										形成了“一校三区”的办学格局。</p>
 									</div>
 								</div>
 								<div class="clearfix"></div>
@@ -157,7 +154,7 @@
 					</div>
 				</div>
 				<div class="col-md-5 about-left">
-					<img src="images/img1.jpg" class="img-responsive" alt="" />
+					<img src="images/img6.JPG" class="img-responsive" alt="" />
 				</div>
 				<div class="clearfix"></div>
 			</div>
@@ -167,7 +164,8 @@
 	<!-- services -->
 	<div class="services agileits-bar">
 		<div class="container">
-			<h3 class="agileits-title">My Statistic</h3>
+			
+			<!--  
 			<div class="services-w3ls-row">
 				<div class="bar_group">
 					<div class='bar_group__bar thin'
@@ -183,6 +181,7 @@
 				<script src="js/bars.js"></script>
 				<!-- //bar-js -->
 			</div>
+			-->
 		</div>
 	</div>
 	<!-- //services -->
@@ -190,82 +189,105 @@
 	<div class="team agileits">
 		<div class="team-info">
 			<div class="container">
-				<h3 class="agileits-title w3ls-title">Our Team</h3>
+				<h3 class="agileits-title w3ls-title">A Corner in HIT</h3>
+				
 				<div class="team-row">
+				
 					<div class="col-md-3 team-grids">
 						<div class="team-agile-img">
 							<a href="#"><img src="images/t1.jpg" alt="img"> </a>
 							<div class="view-caption">
 								<div class="w3ls-info">
-									<h4>Smith</h4>
-									<p>Manager</p>
+									<h6 style="color:blue">the second campus</h6>
 								</div>
-								<ul>
-									<li><a href="#"><span class="fa fa-facebook"></span> </a>
-									</li>
-									<li><a href="#"><span class="fa fa-twitter"></span> </a></li>
-									<li><a href="#"><span class="fa fa-google-plus"></span>
-									</a></li>
-								</ul>
+							
 							</div>
 						</div>
 					</div>
+					
 					<div class="col-md-3 team-grids">
 						<div class="team-agile-img">
 							<a href="#"><img src="images/t2.jpg" alt="img"> </a>
 							<div class="view-caption">
 								<div class="w3ls-info">
-									<h4>Sophia</h4>
-									<p>CEO</p>
+									<h6 style="color:blue">the first campus</h6>
 								</div>
-								<ul>
-									<li><a href="#"><span class="fa fa-facebook"></span> </a>
-									</li>
-									<li><a href="#"><span class="fa fa-twitter"></span> </a></li>
-									<li><a href="#"><span class="fa fa-google-plus"></span>
-									</a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
+					
 					<div class="col-md-3 team-grids">
 						<div class="team-agile-img">
 							<a href="#"><img src="images/t3.jpg" alt="img"> </a>
 							<div class="view-caption">
 								<div class="w3ls-info">
-									<h4>Michael</h4>
-									<p>Staff</p>
+									<h6 style="color:blue">defoliation</h6>
 								</div>
-								<ul>
-									<li><a href="#"><span class="fa fa-facebook"></span> </a>
-									</li>
-									<li><a href="#"><span class="fa fa-twitter"></span> </a></li>
-									<li><a href="#"><span class="fa fa-google-plus"></span>
-									</a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
+					
 					<div class="col-md-3 team-grids">
 						<div class="team-agile-img">
 							<a href="#"><img src="images/t4.jpg" alt="img"> </a>
 							<div class="view-caption">
 								<div class="w3ls-info">
-									<h4>Daniel</h4>
-									<p>Chairman</p>
+									<h6 style="color:blue">building number</h6>
 								</div>
-								<ul>
-									<li><a href="#"><span class="fa fa-facebook"></span> </a>
-									</li>
-									<li><a href="#"><span class="fa fa-twitter"></span> </a></li>
-									<li><a href="#"><span class="fa fa-google-plus"></span>
-									</a></li>
-								</ul>
 							</div>
 						</div>
 					</div>
+					
 					<div class="clearfix"></div>
 				</div>
+
+				<div class="team-row">
+					<div class="col-md-3 team-grids">
+						<div class="team-agile-img">
+							<a href="#"><img src="images/t5.jpg" alt="img"> </a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h6 style="color:blue">bike</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 team-grids">
+						<div class="team-agile-img">
+							<a href="#"><img src="images/t6.jpg" alt="img"> </a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h6 style="color:blue">creepers</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 team-grids">
+						<div class="team-agile-img">
+							<a href="#"><img src="images/t7.jpg" alt="img"> </a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h6 style="color:blue">children playing</h6>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-md-3 team-grids">
+						<div class="team-agile-img">
+							<a href="#"><img src="images/t8.jpg" alt="img"> </a>
+							<div class="view-caption">
+								<div class="w3ls-info">
+									<h6 style="color:blue">confidence stone</h6>
+								</div>
+							</div>
+						</div>
+					</div>'
+					<div class="clearfix"></div>
+				</div>
+
 			</div>
 		</div>
 	</div>
