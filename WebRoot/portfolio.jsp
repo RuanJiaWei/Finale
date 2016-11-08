@@ -1,4 +1,4 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 String path = request.getContextPath();
 String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
@@ -57,34 +57,36 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						Menu
 					</button>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center cl-effect-15">
-						<li><a href="index.jsp" data-hover="Home">Home</a></li>
-						<li><a href="about.jsp"  data-hover="About">About</a></li>					
-						<li><a href="news.jsp" data-hover="News">News</a></li>
-						<li><a href="portfolio.jsp" class="active">Portfolio</a></li>
+						<li><a href="index.jsp" data-hover="主页">主页</a></li>
+						<li><a href="about.jsp"  data-hover="关于我们">关于我们</a></li>					
+						<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+						<li><a href="portfolio.jsp" class="active">通知通告</a></li>
 						<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>			
-						<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
+						<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
 					</ul>	
 					<div class="clearfix"> </div>
 				</div>
 			</div>	
 		</nav>		
 	</div>	
-	<!-- //top-nav -->
-	<!-- banner -->
+	
+	
+	
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">	 
 				<div class="banner-text">
-					<h1><a href="index.jsp"> Knack</a></h1> 
+					<h1><a href="index.jsp"> 通知通告</a></h1> 
+					<br><br><br><br>
 				</div>
 			</div>			
 		</div>			
 	</div>			
-	<!-- //banner -->
-	<!-- portfolio --> 
+
+
+
 	<div id="portfolio" class="portfolio">
 		<div class="container">
 			<h3 class="agileits-title">Portfolio</h3> 	 
@@ -96,6 +98,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li data-filter="3">Category 3</li>
 				</ul>
 				<div class="filtr-container">
+					
 					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
 						<div class="agileits-img">
 							<a href="images/img1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
@@ -103,6 +106,16 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a> 
 						</div>
 					</div>
+					
+					<div class="col-md-4 filtr-item" data-category="1" data-sort="scholars come here">
+						<div class="agileits-img">
+							<a href="images/img1.jpg" class="swipebox" title="turing comes to HIT to give us a lecture">
+								<img class="img-responsive img-style row2" src="images/img1.jpg" alt=""  /> 
+							</a> 
+						</div>
+					</div>
+					
+					
 					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
 						<div class="agileits-img">
 							<a href="images/g2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
@@ -110,6 +123,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a>	
 						</div>
 					</div>
+					
 					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
 						<div class="agileits-img">
 							<a href="images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
@@ -117,6 +131,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a>	
 						</div>
 					</div>
+					
 					<div class="col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
 						<div class="agileits-img">
 							<a href="images/g4.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
@@ -124,6 +139,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a>	
 						</div>
 					</div>
+					
 					<div class="col-md-4 filtr-item" data-category="3" data-sort="In production">
 						<div class="agileits-img">
 							<a href="images/g5.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
@@ -131,6 +147,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a>	
 						</div>
 					</div>
+					
 					<div class="col-md-4 filtr-item" data-category="2, 4" data-sort="Peaceful lake">
 						<div class="agileits-img">
 							<a href="images/img2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
@@ -138,13 +155,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 							</a>	
 						</div>
 					</div>
+					
 				   <div class="clearfix"> </div>
 				</div>
 			</div>
 		</div>  
 	</div>    
-	<!-- //portfolio-->
-	<!-- address -->
+
 	<div class="address">
 		<div class="container">
 			<ul>
@@ -154,8 +171,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</ul>
 		</div>
 	</div>
-	<!-- //address -->
-	<!-- footer-icons -->
+	
+	
 	<div class="footer-icons">
 		<div class="container">	 
 			<ul class="social"> 
@@ -168,8 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 		
 		</div>
 	</div>
-	<!-- //footer-icons -->
-	<!-- footer -->
+	
 	<div class="footer">
 		<div class="container">
 			<div class="footer-left">
