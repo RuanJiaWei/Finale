@@ -77,14 +77,13 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">	 
-				<div class="banner-text">
-					<h1><a href="index.jsp"> 通知通告</a></h1> 
-					<br><br><br><br>
-				</div>
+					<br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br>
+					<br><br><br><br><br><br><br>
+			
 			</div>			
 		</div>			
 	</div>			
-
 
 
 	<div id="portfolio" class="portfolio">
@@ -104,43 +103,59 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				</ul>
 				<div class="filtr-container">
 					
-					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="Busy streets">
+					<div class="col-md-4 filtr-item" data-category="1, 6" data-sort="卡内基梅隆大学">
 						<div class="agileits-img">
-							<a href="images/img1.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-								<img class="img-responsive img-style row2" src="images/img1.jpg" alt=""  /> 
+							<a href="images/p1.jpg" class="swipebox" title="卡内基梅隆大学（Carnegie Mellon University），简称CMU，坐落在美国宾夕法尼亚州的匹兹堡(Pittsburgh)，
+							研究型大学 。该校拥有全美顶级计算机学院和戏剧学院，该校的艺术学院，商学院，工学院以及公共管理学院也都在全美名列前茅。">
+								<img class="img-responsive img-style row2" src="images/p1.jpg" alt=""  /> 
 							</a> 
 						</div>
 					</div>
 					
-					<div class="col-md-4 filtr-item" data-category="1" data-sort="scholars come here">
+					<div class="col-md-4 filtr-item" data-category="1" data-sort="加州大学圣迭戈分校">
 						<div class="agileits-img">
-							<a href="images/img1.jpg" class="swipebox" title="turing comes to HIT to give us a lecture">
-								<img class="img-responsive img-style row2" src="images/img1.jpg" alt=""  /> 
+							<a href="images/p2.jpg" class="swipebox" title="加州大学圣迭戈分校（University of California, San Diego，简称为UCSD，
+							又常译为加州大学圣地亚哥分校）是一所位于美国加州的著名公立大学。
+							隶属于美国全国性第一级（Tier1）的大学，属于加州大学系统之一，位于南加州圣迭戈市的拉荷亚（La Jolla）社区。由于环境优美，气候宜人，
+							校区坐落在海滩边，Newsweek把UCSD评为全美“最性感”的理科学习场所。">
+								<img class="img-responsive img-style row2" src="images/p2.jpg" alt=""  /> 
 							</a> 
 						</div>
 					</div>
 					
 					
-					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="Luminous night">
+					<div class="col-md-4 filtr-item" data-category="2, 3" data-sort="澳大利亚国立大学">
 						<div class="agileits-img">
-							<a href="images/g2.jpg" class="swipebox" title="Duis maximus tortor diam, ac lobortis justo rutrum quis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent non purus fermentum, eleifend velit non">
-								<img src="images/g2.jpg" alt="" class="img-responsive img-style row2" />
+							<a href="images/p3.jpg" class="swipebox" title="澳洲国立大学是澳大利亚八校联盟、国际研究型大学联盟、环太平洋大学联盟的创始成员。
+							其在大洋洲享有特殊的学术地位，澳大利亚五大国家科学院就有4座是坐落在国立大学，分别为澳大利亚科学院、
+							澳大利亚社会科学院、澳大利亚人文科学院等。其澳大利亚联邦院士人数超过270名、英国皇家学会院士超全澳半数，
+							均居澳洲第1。国立大学94%的科学研究被评为世界领先，研究成果涵盖光纤通信、宇宙加速膨胀、细胞免疫、
+							世界最薄镜片、超级计算机等。杰出校友包括了6名诺贝尔奖得主、2位澳洲总理、12位现任部长、以及30位现任大使等。">
+								<img src="images/p3.jpg" alt="" class="img-responsive img-style row2" />
 							</a>	
 						</div>
 					</div>
 					
-					<div class="col-md-4 filtr-item" data-category="1, 4" data-sort="City wonders">
+					<div class="col-md-4 filtr-item" data-category="1" data-sort="普渡大学s">
 						<div class="agileits-img">
-							<a href="images/g3.jpg" class="swipebox" title="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis. Praesent non purus fermentum, eleifend velit non">
-								<img src="images/g3.jpg" alt="" class="img-responsive img-style row2" />
+							<a href="images/p4.jpg" class="swipebox" title="普渡大学（Purdue University），世界著名高等学府，美国一级国家大学，
+							美国大学协会老牌院校，美国十大联盟创始成员，主校区位于美国印第安纳州西拉法叶市（West Lafayette）。
+							该校学术声望极高，在美国和国际上都有较强的影响力，是少数能在未开设医学、法学、建筑学院的情况下，
+							综合排名仍位列世界一流的大学。普渡下属十个学院，专业实力强、涵盖范围广，其中工学院、农学院、药学院、技术学院、兽医学院均位列全美前十。">
+								<img src="images/p4.jpg" alt="" class="img-responsive img-style row2" />
 							</a>	
 						</div>
 					</div>
 					
-					<div class="col-md-4 filtr-item" data-category="3, 4" data-sort="Industrial site">
+					<div class="col-md-4 filtr-item" data-category="3" data-sort="慕尼黑大学">
 						<div class="agileits-img">
-							<a href="images/g4.jpg" class="swipebox" title="Praesent non purus fermentum, eleifend velit non Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis maximus tortor diam, ac lobortis justo rutrum quis.">
-								<img src="images/g4.jpg" alt="" class="img-responsive img-style row2" />
+							<a href="images/p5.jpg" class="swipebox" title="慕尼黑大学建校至今已有500多年，自19世纪以来便是德国和欧洲最具声望大学之一，
+							也是德国精英大学和欧洲研究型大学联盟成员。以34名诺贝尔奖得主在全球院校诺奖排名中位列13名，马克斯·普朗克、沃纳·海森堡，康拉德·阿登纳等都曾在此求学。
+							英国泰晤士报(THE)世界大学2016-2017的最新排名中，慕尼黑大学位列德国第1，世界第30位。其中生命科学第36位，
+							物理学第22位，艺术及人文科学第21位，临床医学及健康科学第32位，商学及经济学第30位。
+							2016年QS世界排名综合位居德国第2，世界第68位。学科排名中物理及天文学第13位，哲学第15位，
+							兽医学第23位，药学及药理学第26位，生物科学第34位。领域排名中自然科学第33位，艺术及人文科学第53位，生命科学及医学第55位。">
+								<img src="images/p5.jpg" alt="" class="img-responsive img-style row2" />
 							</a>	
 						</div>
 					</div>
