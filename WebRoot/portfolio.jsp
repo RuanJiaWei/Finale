@@ -89,13 +89,18 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 
 	<div id="portfolio" class="portfolio">
 		<div class="container">
-			<h3 class="agileits-title">Portfolio</h3> 	 
+			<h3 class="agileits-title">项目信息</h3> 	 
 			<div class="gallery_gds">
 				<ul class="simplefilter">
 					<li class="active" data-filter="all">All</li>
-					<li data-filter="1">Category 1</li>
-					<li data-filter="2">Category 2</li>
-					<li data-filter="3">Category 3</li>
+					<li data-filter="1">美洲交流</li>
+					<li data-filter="2">澳洲交流</li>
+					<li data-filter="3">欧洲交流</li>
+					<li data-filter="4">亚洲交流</li>
+					<li data-filter="5">非洲交流</li>
+					<li data-filter="6">联合培养</li>
+					<li data-filter="7">外国学者来华</li>
+					<li data-filter="8">留学生来华</li>
 				</ul>
 				<div class="filtr-container">
 					
