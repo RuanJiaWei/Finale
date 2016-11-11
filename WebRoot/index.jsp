@@ -252,15 +252,16 @@
 	<div class="address">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i>Broome
-					St, Canada, NY 10002, USA</li>
-				<li><i class="fa fa-phone" aria-hidden="true"></i> +033 111 222
-					4567</li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i>No.92
+					Xidazhi Street, Nangang District, Harbin, Heilongjiang Province,
+					China</li>
+				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="mailto:info@example.com"> mail@example.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>
+
 	
 	
 	<div class="footer">

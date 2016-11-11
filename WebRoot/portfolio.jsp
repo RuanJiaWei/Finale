@@ -220,6 +220,18 @@
 						</div>
 					</div>
 
+					<div class="col-md-4 filtr-item" data-category="3,6"
+						data-sort="瑞典皇家工学院">
+						<div class="agileits-img">
+							<a href="images/p9.jpg" class="swipebox"
+								title="皇家理工学院，或称皇家工学院（瑞典文：Kungliga Tekniska högskolan，KTH）是位于瑞典首都斯德哥尔摩的欧洲顶尖学府，成立于1827年(丁亥年)，
+								校名原为“工学院”（Teknologiska Institutet），1877年起改为现名。该校为瑞典国内最负盛名的理工院校，瑞典全国约三分之一的工程师都出自这所大学。
+								该校除了位于斯德哥尔摩东城的主校区外，另外还有西斯塔、汉宁南、胡丁厄和南泰利耶几个校区，是瑞典最大、最古老的公立理工类高等学校。自1827年，
+								她便是欧洲培养创新和科技人才的主要中心之一。理工科在欧洲乃至世界享有很高声誉，尤其在建筑学、产业经济学、城市规划、可持续能源、环境技术、电子、信息与通讯等领域有自己的专长。">
+								<img src="images/p9.jpg" alt=""
+								class="img-responsive img-style row2" /> </a>
+						</div>
+					</div>
 					<div class="clearfix"></div>
 				</div>
 			</div>

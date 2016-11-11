@@ -134,9 +134,7 @@
 					<h4>
 						<span>23/16</span>Oct
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
+					<p>HIT has an exchange programme with KTH</p>
 					<a href="single.jsp" class="button12"><span>Read More</span> </a>
 				</div>
 
@@ -152,9 +150,7 @@
 					<h4>
 						<span>22/16</span>NOv
 					</h4>
-					<p>Cras justo odioda pibus facilisis dignissimos Sed ut
-						perspiciatis unde omnis iste natus error sit voluptatem inventore
-						veritatis</p>
+					<p>Doctor che will go to Japan</p>
 					<a href="single.jsp" class="button12"><span>Read More</span> </a>
 				</div>
 
@@ -177,12 +173,12 @@
 	<div class="address">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i>Broome
-					St, Canada, NY 10002, USA</li>
-				<li><i class="fa fa-phone" aria-hidden="true"></i> +033 111 222
-					4567</li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i>No.92
+					Xidazhi Street, Nangang District, Harbin, Heilongjiang Province,
+					China</li>
+				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="mailto:info@example.com"> mail@example.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>
