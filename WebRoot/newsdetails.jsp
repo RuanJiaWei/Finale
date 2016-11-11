@@ -7,7 +7,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-<title>Single page</title>
+<title>newsdetails page</title>
 <!-- Custom Theme files -->
 <base href="<%=basePath%>">
   <meta http-equiv="pragma" content="no-cache">
@@ -31,8 +31,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 <!-- //web-fonts -->  
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet"> 
-<!-- //font-awesome icons --> 
-<!-- start-smooth-scrolling -->
+
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>	
 <script type="text/javascript">
@@ -56,7 +55,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						Menu
 					</button>
 				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
+				 
 				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 					<ul class="nav navbar-nav navbar-center cl-effect-15">
 						<li><a href="index.jsp" data-hover="Home">Home</a></li>
@@ -71,8 +70,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>	
 		</nav>		
 	</div>	
-	<!-- //top-nav -->
-	<!-- banner -->
+	
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">	 
@@ -82,11 +80,10 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			</div>			
 		</div>			
 	</div>			
-	<!-- //banner -->
-	<!-- single -->
-	<div class="single">
+	
+	<div class="newsdetails">
 		<div class="container">
-			<div class="wthree_single_grid">
+			<div class="wthree_newsdetails_grid">
 				<h3>culpa qui officia deserunt mollit</h3>
 				<ul>
 					<li><span class="fa fa-user" aria-hidden="true"></span><a href="#">Michael Smith</a></li>
@@ -95,52 +92,42 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li><span class="fa fa-pencil-square-o" aria-hidden="true"></span>Recusandae</li>
 				</ul>
 			</div>
-			<div class="agile_single_banner">
+			
+			
+			<div class="agile_newsdetails_banner">
 				<img src="images/s1.jpg" alt="" class="img-responsive" />
 			</div>
-			<div class="wthree_single_grid1">
-				<p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis 
-					praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias
-					excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui
-					officia deserunt mollitia animi, id est laborum et dolorum fuga. 
-					<span>Et harum quidem rerum facilis est et expedita distinctio. Nam libero 
-					tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus 
-					id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis 
-					dolor repellendus</span>. Temporibus autem quibusdam et aut officiis debitis 
-					aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et 
-					molestiae non recusandae. <span>Itaque earum rerum hic tenetur a sapiente delectus, 
-					ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis 
-					doloribus asperiores repellat.
-					Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur</span></p>
+			<div class="wthree_newsdetails_grid1">
+				<p>it is a sample news </p>
 			</div> 
 			<div class="popular-posts">
 				<h4 class="w3ls-title">Popular Posts</h4>
 				<div class="popular-posts-grids">
 					<div class="col-md-3 popular-posts-grid">	
 						<div class="popular-posts-grid1">
-							<a href="single.jsp"><img src="images/g2.jpg" alt=" " class="img-responsive"></a>
-							<h4><a href="single.jsp">dolori perior</a></h4>
+							<a href="newsdetails.jsp"><img src="images/g2.jpg" alt=" " class="img-responsive"></a>
+							<h4><a href="newsdetails.jsp">dolori perior</a></h4>
 							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
 					</div>
 					<div class="col-md-3 popular-posts-grid">	
 						<div class="popular-posts-grid1">
-							<a href="single.jsp"><img src="images/g4.jpg" alt=" " class="img-responsive"></a>
-							<h4><a href="single.jsp">rerum tenetur</a></h4>
+							<a href="newsdetails.jsp"><img src="images/g4.jpg" alt=" " class="img-responsive"></a>
+							<h4><a href="newsdetails.jsp">rerum tenetur</a></h4>
 							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
 					</div>
 					<div class="col-md-3 popular-posts-grid">	
 						<div class="popular-posts-grid1">
-							<a href="single.jsp"><img src="images/g1.jpg" alt=" " class="img-responsive"></a>
-							<h4><a href="single.jsp">saepe eveniet </a></h4>
+							<a href="newsdetails.jsp"><img src="images/g1.jpg" alt=" " class="img-responsive"></a>
+							<h4><a href="newsdetails.jsp">saepe eveniet </a></h4>
 							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
 					</div>
 					<div class="col-md-3 popular-posts-grid">	
 						<div class="popular-posts-grid1">
-							<a href="single.jsp"><img src="images/g5.jpg" alt=" " class="img-responsive"></a>
-							<h4><a href="single.jsp">ipsum tenetur</a></h4>
+							<a href="newsdetails.jsp"><img src="images/g5.jpg" alt=" " class="img-responsive"></a>
+							<h4><a href="newsdetails.jsp">ipsum tenetur</a></h4>
 							<p>Itaque earum rerum hic tenetur a sapiente delectus.</p>
 						</div>
 					</div>
@@ -192,7 +179,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a></li>
+					href="qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>

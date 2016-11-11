@@ -71,8 +71,7 @@
 					<li><a href="index.jsp" class="active">主页</a></li>
 					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a></li>
 					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
-					</li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
 					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
 					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
@@ -112,7 +111,7 @@
 					<h4>Harbin Institute of Technology</h4>
 					<p>HIT was founded in 1920. our aim is to be the first class university in 
 					the world. we have the best astronautics in China.</p>
-					<a href="single.jsp" class="button12"><span>Read More</span> </a>
+					<a href="newsdetails.jsp" class="button12"><span>Read More</span> </a>
 				</div>
 				<div class="col-md-4 welcome-grids welcome-grids2">
 					<img src="images/img1.jpg" class="img-responsive" alt="" />
