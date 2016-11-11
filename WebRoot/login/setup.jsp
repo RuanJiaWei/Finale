@@ -32,24 +32,24 @@
 
 <body>
 	<h1>注册</h1>
-	<div class="setup">
+	<div class="log">
 		
 		<div class="content2">
 			<h2>注册</h2>
 			<form>
 				<input type="text" name="userid" value="用户账号"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'NAME AND SURNAME';}">
+					onblur="if (this.value == '') {this.value = '用户账号';}">
 				<input type="tel" name="usrtel" value="用户名"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PHONE';}"> <input
-					type="email" name="email" value="EMAIL ADDRESS"
+					onblur="if (this.value == '') {this.value = '用户名';}"> 
+				<input type="email" name="email" value="用户邮箱"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'EMAIL ADDRESS';}">
+					onblur="if (this.value == '') {this.value = '用户邮箱';}">
 				<input type="password" name="psw" value="用户密码"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PASSWORD';}">
-				<input type="submit" class="register" value="Register">
+					onblur="if (this.value == '') {this.value = '用户密码';}">
+				<input type="submit" class="register" value="注册">
 			</form>
 		</div>
 		<div class="clear"></div>

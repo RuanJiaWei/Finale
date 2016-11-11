@@ -30,43 +30,25 @@
 <!-- /css files -->
 </head>
 <body>
-	<h1>Unique Login Form</h1>
+	<h1>登录界面</h1>
 	<div class="log">
-		<div class="content1">
+		<div class="content2">
 			<h2>登录</h2>
 			<form action="<%=path %>/c1/login" method="post">
 				<input type="text" name="userid" value="用户账号"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'USERNAME';}">
+					onblur="if (this.value == '') {this.value = '用户账号';}">
 				<input type="password" name="psw" value="登录密码"
 					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PASSWORD';}">
+					onblur="if (this.value == '') {this.value = '用户密码';}">
 				<div class="button-row">
-					<input type="submit" class="sign-in" value="Sign In"> <input
-						type="reset" class="reset" value="Reset">
+					<input type="submit" class="sign-in" value="登录"> 
+					<input type="reset" class="reset" value="重置">
 					<div class="clear"></div>
 				</div>
 			</form>
 		</div>
 		
-		<div class="content2">
-			<h2>注册</h2>
-			<form>
-				<input type="text" name="userid" value="USERNAME"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'NAME AND SURNAME';}">
-				<input type="tel" name="usrtel" value="PHONE"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PHONE';}"> <input
-					type="email" name="email" value="EMAIL ADDRESS"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'EMAIL ADDRESS';}">
-				<input type="password" name="psw" value="PASSWORD"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PASSWORD';}">
-				<input type="submit" class="register" value="Register">
-			</form>
-		</div>
 		<div class="clear"></div>
 	</div>
 
