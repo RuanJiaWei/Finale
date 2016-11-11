@@ -29,39 +29,24 @@
 <link href="<%=basePath%>/login/css/style.css" rel='stylesheet' type='text/css' media="all" />
 <!-- /css files -->
 </head>
+
 <body>
-	<h1>Unique Login Form</h1>
-	<div class="log">
-		<div class="content1">
-			<h2>登录</h2>
-			<form action="<%=path %>/c1/login" method="post">
-				<input type="text" name="userid" value="用户账号"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'USERNAME';}">
-				<input type="password" name="psw" value="登录密码"
-					onfocus="this.value = '';"
-					onblur="if (this.value == '') {this.value = 'PASSWORD';}">
-				<div class="button-row">
-					<input type="submit" class="sign-in" value="Sign In"> <input
-						type="reset" class="reset" value="Reset">
-					<div class="clear"></div>
-				</div>
-			</form>
-		</div>
+	<h1>注册</h1>
+	<div class="setup">
 		
 		<div class="content2">
 			<h2>注册</h2>
 			<form>
-				<input type="text" name="userid" value="USERNAME"
+				<input type="text" name="userid" value="用户账号"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = 'NAME AND SURNAME';}">
-				<input type="tel" name="usrtel" value="PHONE"
+				<input type="tel" name="usrtel" value="用户名"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = 'PHONE';}"> <input
 					type="email" name="email" value="EMAIL ADDRESS"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = 'EMAIL ADDRESS';}">
-				<input type="password" name="psw" value="PASSWORD"
+				<input type="password" name="psw" value="用户密码"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = 'PASSWORD';}">
 				<input type="submit" class="register" value="Register">

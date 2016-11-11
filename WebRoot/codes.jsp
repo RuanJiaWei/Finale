@@ -1,7 +1,9 @@
-<%@ page language="java" import="java.util.*" pageEncoding="ISO-8859-1"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
-String path = request.getContextPath();
-String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+	String path = request.getContextPath();
+	String basePath = request.getScheme() + "://"
+			+ request.getServerName() + ":" + request.getServerPort()
+			+ path + "/";
 %>
 
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
@@ -56,32 +58,28 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<!-- top-nav -->
 	<div class="top-nav">
 		<nav class="navbar navbar-default">
-			<div class="container">
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed"
-						data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-						Menu</button>
-				</div>
-				<!-- Collect the nav links, forms, and other content for toggling -->
-				<div class="collapse navbar-collapse"
-					id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav navbar-center cl-effect-15">
-						<li><a href="index.jsp" data-hover="Home">Home</a>
-						</li>
-						<li><a href="about.jsp" data-hover="About">About</a>
-						</li>
-						<li><a href="news.jsp" data-hover="News">News</a>
-						</li>
-						<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
-						</li>
-						<li><a href="codes.jsp" class="active">Codes</a>
-						</li>
-						<li><a href="contact.jsp" data-hover="Contact">Contact</a>
-						</li>
-					</ul>
-					<div class="clearfix"></div>
-				</div>
+		<div class="container">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle collapsed"
+					data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+					Menu</button>
 			</div>
+			<!-- Collect the nav links, forms, and other content for toggling -->
+			<div class="collapse navbar-collapse"
+				id="bs-example-navbar-collapse-1">
+				<ul class="nav navbar-nav navbar-center cl-effect-15">
+					<li><a href="index.jsp" data-hover="主页">主页</a></li>
+					<li><a href="about.jsp" data-hover="关于我们">关于我们</a></li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
+					<li><a href="codes.jsp" class="active">Codes</a></li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+				</ul>
+				<div class="clearfix"></div>
+			</div>
+		</div>
 		</nav>
 	</div>
 	<!-- //top-nav -->
@@ -105,58 +103,52 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 			<div class="grid_3 grid_5 ">
 				<h3 class="hdg">Buttons</h3>
 				<h1>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h1>
 				<h2>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h2>
 				<h3>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h3>
 				<h4>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h4>
 				<h5>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h5>
 				<h6>
-					<a href="#"><span class="label label-default">Default</span>
-					</a> <a href="#"><span class="label label-primary">Primary</span>
-					</a> <a href="#"><span class="label label-success">Success</span>
-					</a> <a href="#"><span class="label label-info">Info</span>
-					</a> <a href="#"><span class="label label-warning">Warning</span>
-					</a> <a href="#"><span class="label label-danger">Danger</span>
-					</a>
+					<a href="#"><span class="label label-default">Default</span> </a> <a
+						href="#"><span class="label label-primary">Primary</span> </a> <a
+						href="#"><span class="label label-success">Success</span> </a> <a
+						href="#"><span class="label label-info">Info</span> </a> <a
+						href="#"><span class="label label-warning">Warning</span> </a> <a
+						href="#"><span class="label label-danger">Danger</span> </a>
 				</h6>
 			</div>
 			<div class="grid_3 grid_4 ">
@@ -169,8 +161,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										h1. Bootstrap heading<a class="anchorjs-link"
 											href="#h1.-bootstrap-heading"><span class="anchorjs-icon"></span>
 										</a>
-									</h1>
-								</td>
+									</h1></td>
 								<td class="type-info">Semibold 36px</td>
 							</tr>
 							<tr>
@@ -178,8 +169,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										h2. Bootstrap heading<a class="anchorjs-link"
 											href="#h2.-bootstrap-heading"><span class="anchorjs-icon"></span>
 										</a>
-									</h2>
-								</td>
+									</h2></td>
 								<td class="type-info">Semibold 30px</td>
 							</tr>
 							<tr>
@@ -187,8 +177,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										h3. Bootstrap heading<a class="anchorjs-link"
 											href="#h3.-bootstrap-heading"><span class="anchorjs-icon"></span>
 										</a>
-									</h3>
-								</td>
+									</h3></td>
 								<td class="type-info">Semibold 24px</td>
 							</tr>
 							<tr>
@@ -196,8 +185,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										h4. Bootstrap heading<a class="anchorjs-link"
 											href="#h4.-bootstrap-heading"><span class="anchorjs-icon"></span>
 										</a>
-									</h4>
-								</td>
+									</h4></td>
 								<td class="type-info">Semibold 18px</td>
 							</tr>
 							<tr>
@@ -205,13 +193,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 										h5. Bootstrap heading<a class="anchorjs-link"
 											href="#h5.-bootstrap-heading"><span class="anchorjs-icon"></span>
 										</a>
-									</h5>
-								</td>
+									</h5></td>
 								<td class="type-info">Semibold 14px</td>
 							</tr>
 							<tr>
-								<td><h6>h6. Bootstrap heading</h6>
-								</td>
+								<td><h6>h6. Bootstrap heading</h6></td>
 								<td class="type-info">Semibold 12px</td>
 							</tr>
 						</tbody>
@@ -309,15 +295,12 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<li class="active">Home</li>
 				</ol>
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a>
-					</li>
+					<li><a href="#">Home</a></li>
 					<li class="active">Library</li>
 				</ol>
 				<ol class="breadcrumb">
-					<li><a href="#">Home</a>
-					</li>
-					<li><a href="#">Library</a>
-					</li>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Library</a></li>
 					<li class="active">Data</li>
 				</ol>
 			</div>
@@ -335,38 +318,27 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 						<tbody>
 							<tr>
 								<td>No modifiers</td>
-								<td><span class="badge">42</span>
-								</td>
+								<td><span class="badge">42</span></td>
 							</tr>
 							<tr>
-								<td><code>.badge-primary</code>
-								</td>
-								<td><span class="badge badge-primary">1</span>
-								</td>
+								<td><code>.badge-primary</code></td>
+								<td><span class="badge badge-primary">1</span></td>
 							</tr>
 							<tr>
-								<td><code>.badge-success</code>
-								</td>
-								<td><span class="badge badge-success">22</span>
-								</td>
+								<td><code>.badge-success</code></td>
+								<td><span class="badge badge-success">22</span></td>
 							</tr>
 							<tr>
-								<td><code>.badge-info</code>
-								</td>
-								<td><span class="badge badge-info">30</span>
-								</td>
+								<td><code>.badge-info</code></td>
+								<td><span class="badge badge-info">30</span></td>
 							</tr>
 							<tr>
-								<td><code>.badge-warning</code>
-								</td>
-								<td><span class="badge badge-warning">412</span>
-								</td>
+								<td><code>.badge-warning</code></td>
+								<td><span class="badge badge-warning">412</span></td>
 							</tr>
 							<tr>
-								<td><code>.badge-danger</code>
-								</td>
-								<td><span class="badge badge-danger">999</span>
-								</td>
+								<td><code>.badge-danger</code></td>
+								<td><span class="badge badge-danger">999</span></td>
 							</tr>
 						</tbody>
 					</table>
@@ -417,16 +389,14 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 					<ul id="myTab" class="nav nav-tabs" role="tablist">
 						<li role="presentation" class="active"><a href="#home"
 							id="home-tab" role="tab" data-toggle="tab" aria-controls="home"
-							aria-expanded="true">Home</a>
-						</li>
+							aria-expanded="true">Home</a></li>
 						<li role="presentation"><a href="#profile" role="tab"
 							id="profile-tab" data-toggle="tab" aria-controls="profile">Profile</a>
 						</li>
 						<li role="presentation" class="dropdown"><a href="#"
 							id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
 							aria-controls="myTabDrop1-contents">Dropdown <span
-								class="caret"></span>
-						</a>
+								class="caret"></span> </a>
 							<ul class="dropdown-menu" role="menu"
 								aria-labelledby="myTabDrop1" id="myTabDrop1-contents">
 								<li><a href="#dropdown1" tabindex="-1" role="tab"
@@ -435,7 +405,8 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								<li><a href="#dropdown2" tabindex="-1" role="tab"
 									id="dropdown2-tab" data-toggle="tab" aria-controls="dropdown2">@mdo</a>
 								</li>
-							</ul></li>
+							</ul>
+						</li>
 					</ul>
 					<div id="myTabContent" class="tab-content">
 						<div role="tabpanel" class="tab-pane fade in active" id="home"
@@ -591,15 +562,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								Action <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu">
-								<li><a href="#">Action</a>
-								</li>
-								<li><a href="#">Another action</a>
-								</li>
-								<li><a href="#">Something else here</a>
-								</li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a>
-								</li>
+								<li><a href="#">Separated link</a></li>
 							</ul>
 						</div>
 						<!-- /btn-group -->
@@ -618,15 +585,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 								Action <span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu dropdown-menu-right">
-								<li><a href="#">Action</a>
-								</li>
-								<li><a href="#">Another action</a>
-								</li>
-								<li><a href="#">Something else here</a>
-								</li>
+								<li><a href="#">Action</a></li>
+								<li><a href="#">Another action</a></li>
+								<li><a href="#">Something else here</a></li>
 								<li role="separator" class="divider"></li>
-								<li><a href="#">Separated link</a>
-								</li>
+								<li><a href="#">Separated link</a></li>
 							</ul>
 						</div>
 						<!-- /btn-group -->
@@ -810,8 +773,7 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 				<li><i class="fa fa-phone" aria-hidden="true"></i> +033 111 222
 					4567</li>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="mailto:info@example.com"> mail@example.com</a>
-				</li>
+					href="mailto:info@example.com"> mail@example.com</a></li>
 			</ul>
 		</div>
 	</div>
@@ -820,16 +782,11 @@ String basePath = request.getScheme()+"://"+request.getServerName()+":"+request.
 	<div class="footer-icons">
 		<div class="container">
 			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a>
-				</li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a>
-				</li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a>
-				</li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a>
-				</li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a>
-				</li>
+				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
+				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
+				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
+				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
+				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
 			</ul>
 
 		</div>

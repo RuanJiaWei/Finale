@@ -62,14 +62,15 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="Home">Home</a></li>
-					<li><a href="about.jsp" class="active"> About</a></li>
-					<li><a href="news.jsp" data-hover="News">News</a></li>
-					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
+					<li><a href="index.jsp" data-hover="主页">主页</a></li>
+					<li><a href="about.jsp" class="active"> 关于我们</a></li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
 					</li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="Contact">Contact</a></li>
-					<li><a href="login/index.jsp" data-hover="Login">Login</a></li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>

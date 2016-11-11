@@ -38,8 +38,7 @@
 <!-- //web-fonts -->
 <!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
-<!-- //font-awesome icons -->
-<!-- start-smooth-scrolling -->
+
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -77,6 +76,7 @@
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
 					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
 					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
