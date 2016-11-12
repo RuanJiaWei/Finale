@@ -3,6 +3,15 @@ package model;
 public class user {
 	private String userid;
 	private String psw;
+	private String username;
+
+	public String getUsername() {
+		return username;
+	}
+
+	public void setUsername(String username) {
+		this.username = username;
+	}
 
 	public String getUserid() {
 		return userid;

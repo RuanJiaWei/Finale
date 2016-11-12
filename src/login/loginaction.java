@@ -7,6 +7,14 @@ import model.user;
 public class loginaction {
 	private String userid;
 	private String psw;
+	private String username;
+	public String getUsername() {
+		return username;
+	}
+	public void setUsername(String username) {
+		this.username = username;
+	}
+
 	private Connection conn;
 	private PreparedStatement prestatement;
 	public loginaction(){

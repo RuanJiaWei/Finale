@@ -6,5 +6,9 @@
 			<result name="success">/index.jsp</result>
 			<result name="fail">/login/index.jsp</result>
 		</action>
+		<action name="setup" class="login.setupaction">
+			<result name="success">/login/index.jsp</result>
+			<result name="fail">/login/setup.jsp</result>
+		</action>
 	</package>
 </struts>    
