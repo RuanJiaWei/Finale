@@ -34,7 +34,7 @@
 	<div class="log">
 		<div class="content2">
 			<h2>登录</h2>
-			<form action="<%=path %>/c1/login" method="post">
+			<form action="<%=path %>/c1/login.action" method="post">
 				<input type="text" name="userid" value="用户账号"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = '用户账号';}">

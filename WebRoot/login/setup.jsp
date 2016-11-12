@@ -40,7 +40,7 @@
 				<input type="text" name="userid" value="用户账号"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = '用户账号';}">
-				<input type="tel" name="usrtel" value="用户名"
+				<input type="tel" name="usrname" value="用户名"
 					onfocus="this.value = '';"
 					onblur="if (this.value == '') {this.value = '用户名';}"> 
 				<input type="email" name="email" value="用户邮箱"

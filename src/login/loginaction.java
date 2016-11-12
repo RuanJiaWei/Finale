@@ -1,17 +1,50 @@
 package login;
-
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.SQLException;
+import java.sql.ResultSet;
+import model.user;
 public class loginaction {
 	private String userid;
 	private String psw;
-
+	private Connection conn;
+	private PreparedStatement prestatement;
+	public loginaction(){
+		conn= new connection.conn().getCon();
+	}
 	public String execute() {
-		if (userid.equals("11") && psw.equals("11")) {
+		user us=new user();
+		us.setUserid(userid);
+		us.setPsw(psw);
+		if(validateuser(us)){
 			return "success";
-		} else {
-			return "fail";
+		}
+		else{
+			return "false";
 		}
 	}
 
+	public boolean validateuser(user user){
+		try {
+			prestatement=conn.prepareStatement("select * from user where userid=? and psw=?");
+			prestatement.setString(1, user.getUserid());
+			prestatement.setString(2, user.getPsw());
+			ResultSet rs=prestatement.executeQuery();
+			if(rs.next()){
+				return true;
+			}
+			else{
+				return false;
+			}
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			return false;
+		}
+		
+	}
+	
+	
 	public String getUserid() {
 		return userid;
 	}
