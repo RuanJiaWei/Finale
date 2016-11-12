@@ -28,7 +28,7 @@ public class loginaction {
 			return "success";
 		}
 		else{
-			return "false";
+			return "fail";
 		}
 	}
 

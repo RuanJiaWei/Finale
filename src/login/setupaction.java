@@ -28,7 +28,7 @@ public class setupaction {
 				return "success";
 			}
 			else{
-				return "false";
+				return "fail";
 			}
 		}
 		else{
@@ -38,8 +38,7 @@ public class setupaction {
 
 	public boolean validateuser(user user) {
 		try {
-			prestatement = conn
-					.prepareStatement("select * from user where username=?");
+			prestatement = conn.prepareStatement("select * from user where username=?");
 			prestatement.setString(1, user.getUsername());
 			ResultSet rs = prestatement.executeQuery();
 			if (rs.next()) {
