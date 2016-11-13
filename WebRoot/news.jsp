@@ -69,14 +69,22 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="主页">主页</a></li>
-					<li><a href="about.jsp" data-hover="关于我们">关于我们</a></li>
-					<li><a href="news.jsp" class="active">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="index.jsp" data-hover="主页">主页</a>
+					</li>
+					<li><a href="about.jsp" data-hover="关于我们">关于我们</a>
+					</li>
+					<li><a href="news.jsp" class="active">新闻</a>
+					</li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
+					</li>
+					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
+					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
+					</li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a>
+					</li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -89,7 +97,7 @@
 			<div class="container">
 				<div class="banner-text">
 					<h1>
-						<a href="index.jsp"> HIT news</a> <br><br><br><br>
+						<a href="index.jsp"> HIT news</a> <br> <br> <br> <br>
 					</h1>
 				</div>
 			</div>
@@ -97,68 +105,83 @@
 	</div>
 
 	<div class="news">
-		<div class="container">
-			<h3 class="agileits-title">News</h3>
-			<ul class="simplefilter">
-				<li data-filter="1" class="active">1</li>
-				<li data-filter="2">2</li>
-			</ul>
-			<div class="gallary_gds">
-				<div class="news-info">
-					<div class="col-md-4 news-grids">
-						<h4 data-hover="august">
-							<span>13/16</span>August
-						</h4>
-						<p>今天CMU的图灵教授来哈工大开讲座</p>
-						<a href="newscatalogue.jsp" class="button12" data-hover="Read More"><span>Read More</span> </a>
+		<div id="portfolio" class="portfolio">
+			<div class="container">
+				<h3 class="agileits-title">News</h3>
+
+				<div class="gallary_gds">
+					<ul class="simplefilter">
+						<li data-filter="1" class="active">1</li>
+						<li data-filter="2">2</li>
+						<li data-filter="3">3</li>
+						<li data-filter="4">4</li>
+					</ul>
+					<div class="filtr-container">
+						<div class="news-info">
+							<div class="col-md-4 news-grids filtr-item" data-category="1"
+								data-sort="aug">
+								<h4 data-hover="august">
+									<span>1</span>August
+								</h4>
+								<p>今天CMU的图灵教授来哈工大开讲座</p>
+								<a href="<%=basePath %>/c1/newslist.action?date=8-1" class="button12"
+									data-hover="Read More"><span>Read More</span> </a>
+							</div>
+
+
+							<div class="col-md-4 news-grids filtr-item" data-category="2"
+								data-sort="aug">
+								<h4>
+									<span>10/16</span>August
+								</h4>
+								<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
+								<a href="newscatalogue.jsp" class="button12"><span>Read
+										More</span> </a>
+
+							</div>
+
+							<div class="col-md-4 news-grids filtr-item" data-category="2">
+								<h4>
+									<span>05/16</span>Sep
+								</h4>
+								<p>工大学生薛霸在Harvard交流心得</p>
+								<a href="newscatalogue.jsp" class="button12"><span>Read
+										More</span> </a>
+							</div>
+							<div class="clearfix"></div>
+
+
+
+							<div class="col-md-4 news-grids filtr-item" data-category="3">
+								<h4>
+									<span>23/16</span>Oct
+								</h4>
+								<p>HIT has an exchange programme with KTH</p>
+								<a href="newscatalogue.jsp" class="button12"><span>Read
+										More</span> </a>
+							</div>
+
+							<div class="col-md-4 news-grids filtr-item" data-category="3">
+								<h4>
+									<span>18/16</span>Oct
+								</h4>
+								<p>东京大学留学生在工大生活</p>
+								<a href="newscatalogue.jsp" class="button12"><span>Read
+										More</span> </a>
+							</div>
+
+							<div class="col-md-4 news-grids filtr-item" data-category="2">
+								<h4>
+									<span>22/16</span>NOv
+								</h4>
+								<p>Doctor che will go to Japan</p>
+								<a href="newscatalogue.jsp" class="button12"><span>Read
+										More</span> </a>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
 					</div>
-	
-	
-					<div class="col-md-4 news-grids">
-						<h4>
-							<span>10/16</span>August
-						</h4>
-						<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
-						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-	
-					</div>
-	
-					<div class="col-md-4 news-grids">
-						<h4>
-							<span>05/16</span>Sep
-						</h4>
-						<p>工大学生薛霸在Harvard交流心得</p>
-						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			 	 
-				<div class="news-info">
-					<div class="col-md-4 news-grids news-girds-bottom">
-						<h4>
-							<span>23/16</span>Oct
-						</h4>
-						<p>HIT has an exchange programme with KTH</p>
-						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-					</div>
-	
-					<div class="col-md-4 news-grids ">
-						<h4>
-							<span>18/16</span>Oct
-						</h4>
-						<p>东京大学留学生在工大生活</p>
-						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-					</div>
-	
-					<div class="col-md-4 news-grids ">
-						<h4>
-							<span>22/16</span>NOv
-						</h4>
-						<p>Doctor che will go to Japan</p>
-						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-					</div>
-	
-					<div class="clearfix"></div>
 				</div>
 			</div>
 		</div>
@@ -183,7 +206,8 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a>
+				</li>
 			</ul>
 		</div>
 	</div>
