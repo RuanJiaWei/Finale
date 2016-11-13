@@ -11,7 +11,8 @@
 			<result name="fail">/login/setup.jsp</result>
 		</action>
 		<action name="newslist" class="newslist.newslistaction">
-			<result name="success"></result>
+			<result name="success">/newscatalogue.jsp</result>
+			<result name="fail">/news.jsp</result>
 		</action>
 	</package>
 </struts>    

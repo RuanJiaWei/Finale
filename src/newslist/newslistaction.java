@@ -1,5 +1,6 @@
 package newslist;
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
@@ -9,15 +10,20 @@ import java.sql.SQLException;
 import model.newsitem;
 public class newslistaction {
 	private String date;
+	private String newstag;
+	private String newstitle;
+	
 	private Connection conn;
 	private PreparedStatement prestatement;
-	List newsitems=new ArrayList();
+	private ArrayList<newsitem> newsitems=new ArrayList<newsitem>();
+
 	public newslistaction(){
 		conn=new connection.conn().getCon();
 	}
 	
 	public String execute(){
-		findnewsitems();
+		newsitems=findnewsitems();
+		
 		if(newsitems.size()>0){
 			return "success";
 		}
@@ -26,7 +32,8 @@ public class newslistaction {
 		}
 	}
 	
-	public List findnewsitems(){
+	public ArrayList<newsitem> findnewsitems(){
+		ArrayList<newsitem> newsitems=new ArrayList<newsitem>();
 		try {
 			prestatement=conn.prepareStatement("select * from newsitem where date=?");
 			prestatement.setString(1, date);
@@ -54,5 +61,27 @@ public class newslistaction {
 
 	public void setDate(String date) {
 		this.date = date;
+	}
+	public String getNewstag() {
+		return newstag;
+	}
+
+	public void setNewstag(String newstag) {
+		this.newstag = newstag;
+	}
+
+	public String getNewstitle() {
+		return newstitle;
+	}
+
+	public void setNewstitle(String newstitle) {
+		this.newstitle = newstitle;
+	}
+	public ArrayList<newsitem> getNewsitems() {
+		return newsitems;
+	}
+
+	public void setNewsitems(ArrayList<newsitem> newsitems) {
+		this.newsitems = newsitems;
 	}
 }

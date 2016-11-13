@@ -5,7 +5,7 @@
 			+ request.getServerName() + ":" + request.getServerPort()
 			+ path + "/";
 %>
-
+<%@taglib prefix="s" uri="/struts-tags"%>
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
@@ -85,16 +85,47 @@
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">
-				
+				<div class="banner-text">
+					<h1>
+						news in
+						<s:property value="date" />
+					</h1>
+					<br> <br> <br> <br> <br> <br> <br>
+					<br> <br> <br> <br>
+				</div>
 			</div>
 		</div>
 	</div>
 
 	<div class="single">
 		<div class="container">
-			<div class="wthree_single_grid">
-				<a href="newsdetails.jsp"><h3>news catalogue</h3></a>
-			</div>
+			<table>
+				<s:iterator value="newsitems">
+					<tr>
+						<td><div class="wthree_single_grid">
+								<a href="newsdetails.jsp">
+									<h4>
+										<span class="label label-danger"> <s:property
+												value="newstag" /> </span> | 
+
+									</h4> </a>
+							</div></td>
+							<td><h2 id="h1.-bootstrap-heading">
+								<s:property value="newstitle"/><a class="anchorjs-link"
+									href="#h1.-bootstrap-heading"><span class="anchorjs-icon"></span>
+								</a>
+							</h2>
+						</td>
+						<td class="type-info"><s:property value="date"/></td>
+					</tr>
+				</s:iterator>
+			</table>
+		</div>
+	</div>
+
+	<div class="single">
+		<div class="container">
+			<p>it is a test</p>
 
 		</div>
 	</div>
