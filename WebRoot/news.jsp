@@ -89,10 +89,7 @@
 			<div class="container">
 				<div class="banner-text">
 					<h1>
-						<a href="index.jsp"> HIT news</a> <br>
-						<br>
-						<br>
-						<br>
+						<a href="index.jsp"> HIT news</a> <br><br><br><br>
 					</h1>
 				</div>
 			</div>
@@ -102,64 +99,68 @@
 	<div class="news">
 		<div class="container">
 			<h3 class="agileits-title">News</h3>
-			<div class="news-info">
-
-				<div class="col-md-4 news-grids">
-					<h4 data-hover="august">
-						<span>13/16</span>August
-					</h4>
-					<p>今天CMU的图灵教授来哈工大开讲座</p>
-					<a href="newscatalogue.jsp" class="button12" data-hover="Read More"><span>Read
-							More</span> </a>
+			<ul class="simplefilter">
+				<li data-filter="1" class="active">1</li>
+				<li data-filter="2">2</li>
+			</ul>
+			<div class="gallary_gds">
+				<div class="news-info">
+					<div class="col-md-4 news-grids">
+						<h4 data-hover="august">
+							<span>13/16</span>August
+						</h4>
+						<p>今天CMU的图灵教授来哈工大开讲座</p>
+						<a href="newscatalogue.jsp" class="button12" data-hover="Read More"><span>Read More</span> </a>
+					</div>
+	
+	
+					<div class="col-md-4 news-grids">
+						<h4>
+							<span>10/16</span>August
+						</h4>
+						<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
+						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+	
+					</div>
+	
+					<div class="col-md-4 news-grids">
+						<h4>
+							<span>05/16</span>Sep
+						</h4>
+						<p>工大学生薛霸在Harvard交流心得</p>
+						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+					</div>
+					<div class="clearfix"></div>
 				</div>
-
-
-				<div class="col-md-4 news-grids">
-					<h4>
-						<span>10/16</span>August
-					</h4>
-					<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
-					<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-
-				</div>
-
-				<div class="col-md-4 news-grids">
-					<h4>
-						<span>05/16</span>Sep
-					</h4>
-					<p>工大学生薛霸在Harvard交流心得</p>
-					<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+			 	 
+				<div class="news-info">
+					<div class="col-md-4 news-grids news-girds-bottom">
+						<h4>
+							<span>23/16</span>Oct
+						</h4>
+						<p>HIT has an exchange programme with KTH</p>
+						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+					</div>
+	
+					<div class="col-md-4 news-grids ">
+						<h4>
+							<span>18/16</span>Oct
+						</h4>
+						<p>东京大学留学生在工大生活</p>
+						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+					</div>
+	
+					<div class="col-md-4 news-grids ">
+						<h4>
+							<span>22/16</span>NOv
+						</h4>
+						<p>Doctor che will go to Japan</p>
+						<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
+					</div>
+	
+					<div class="clearfix"></div>
 				</div>
 			</div>
-		 	 
-			<div class="news-info">
-				<div class="col-md-4 news-grids news-girds-bottom">
-					<h4>
-						<span>23/16</span>Oct
-					</h4>
-					<p>HIT has an exchange programme with KTH</p>
-					<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-				</div>
-
-				<div class="col-md-4 news-grids ">
-					<h4>
-						<span>18/16</span>Oct
-					</h4>
-					<p>东京大学留学生在工大生活</p>
-					<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-				</div>
-
-				<div class="col-md-4 news-grids ">
-					<h4>
-						<span>22/16</span>NOv
-					</h4>
-					<p>Doctor che will go to Japan</p>
-					<a href="newscatalogue.jsp" class="button12"><span>Read More</span> </a>
-				</div>
-
-				<div class="clearfix"></div>
-			</div>
-			
 		</div>
 	</div>
 
