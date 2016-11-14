@@ -69,14 +69,14 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="主页">主页</a></li>
-					<li><a href="about.jsp" data-hover="关于我们">关于我们</a></li>
-					<li><a href="news.jsp" class="active">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
+					<li><a href="index.jsp" data-hover="Homepage">Homepage</a></li>
+					<li><a href="about.jsp" data-hover="About Us">About Us</a></li>
+					<li><a href="news.jsp" class="active">News</a></li>
+					<li><a href="portfolio.jsp" data-hover="Notification">Notification</a></li>
 					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="contact.jsp" data-hover="Contact Us">Contact Us</a></li>
+					<li><a href="login/index.jsp" data-hover="Log In">Log In</a></li>
+					<li><a href="login/setup.jsp" data-hover="Register">Register</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -114,7 +114,7 @@
 								<h4 data-hover="august">
 									<span>1</span>August
 								</h4>
-								<p>今天CMU的图灵教授来哈工大开讲座</p>
+								<p>A professor from CMU has a lecture today</p>
 								<a href="<%=basePath%>/c1/newslist.action?date=8-1"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
@@ -126,7 +126,7 @@
 								<h4>
 									<span>10/16</span>August
 								</h4>
-								<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
+								<p>Activities with students from Moscow University will be held today</p>
 								<a href="newscatalogue.jsp" class="button12"><span>Read
 										More</span> </a>
 
@@ -136,7 +136,7 @@
 								<h4>
 									<span>05/16</span>Sep
 								</h4>
-								<p>工大学生鹿在Harvard交流心得</p>
+								<p>Studying in Harvard:Lu from HIT owns much</p>
 								<a href="newscatalogue.jsp" class="button12"><span>Read
 										More</span> </a>
 							</div>
@@ -157,7 +157,7 @@
 								<h4>
 									<span>18/16</span>Oct
 								</h4>
-								<p>东京大学留学生在工大生活</p>
+								<p>The life of students from Tokyo university</p>
 								<a href="newscatalogue.jsp" class="button12"><span>Read
 										More</span> </a>
 							</div>
