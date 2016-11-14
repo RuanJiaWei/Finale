@@ -61,7 +61,7 @@
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
 					<li><a href="index.jsp" data-hover="Homepage">Homepage</a></li>
-					<li><a href="about.jsp" class="active"> About Us</a></li>
+					<li><a href="about.jsp" class="active">About Us</a></li>
 					<li><a href="news.jsp" data-hover="News">News</a></li>
 					<li><a href="portfolio.jsp" data-hover="Notification">Notification</a>
 					</li>
