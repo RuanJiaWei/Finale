@@ -10,8 +10,6 @@ public class test
 	public static void main(String[] args) 
 	{	
 		BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
-		// TODO Auto-generated method stub
-		// new conn().getCon();
 		String exp;
 		exp = buff.readLine();
 		SP(exp);
