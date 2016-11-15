@@ -9,7 +9,7 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-<title>Single page</title>
+<title>新闻</title>
 <!-- Custom Theme files -->
 <base href="<%=basePath%>">
 <meta http-equiv="pragma" content="no-cache">
@@ -20,24 +20,15 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
-
-<!-- //Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet"
 	media="all">
 <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<!-- js -->
 <script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
-<!-- //js -->
-<!-- web-fonts -->
-<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet'
-	type='text/css'>
+<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet' type='text/css'>
 <link
 	href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
 	rel='stylesheet' type='text/css'>
-<!-- //web-fonts -->
-<!-- font-awesome icons -->
 <link href="css/font-awesome.css" rel="stylesheet">
-
 <script type="text/javascript" src="js/move-top.js"></script>
 <script type="text/javascript" src="js/easing.js"></script>
 <script type="text/javascript">
@@ -151,25 +142,15 @@ body {
 <link href="<%=basePath%>window/css/styles.css" type="text/css"
 	media="all" rel="stylesheet" />
 <style type="text/css">
-
-
 .box_skitter {
 	margin: 20px auto;
 }
 </style>
-<!-- Skitter Styles -->
-<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
-	media="all" rel="stylesheet" />
 
-<!-- Skitter JS -->
-<script type="text/javascript" language="javascript"
-	src="<%=basePath %>window/js/jquery-1.6.3.min.js"></script>
-<script type="text/javascript" language="javascript"
-	src="<%=basePath %>window/js/jquery.easing.1.3.js"></script>
-<script type="text/javascript" language="javascript"
-	src="<%=basePath %>window/js/jquery.skitter.min.js"></script>
-
-<!-- Init Skitter -->
+<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css" media="all" rel="stylesheet" />
+<script type="text/javascript" language="javascript" src="<%=basePath %>window/js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" language="javascript" src="<%=basePath %>window/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript" src="<%=basePath %>window/js/jquery.skitter.min.js"></script>
 <script type="text/javascript" language="javascript">
 	$(document).ready(function() {
 		$('.box_skitter_large').skitter({
@@ -191,14 +172,6 @@ body {
 
 
 
-
-
-
-
-
-
-
-	<!-- top-nav -->
 	<div class="top-nav">
 		<nav class="navbar navbar-default">
 		<div class="container">
@@ -213,13 +186,21 @@ body {
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
 					<li><a href="index.jsp" class="active">主页</a>
 					</li>
-					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a>
-					</li>
 					<li><a href="news.jsp" data-hover="新闻">新闻</a>
 					</li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
-					</li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
+					<li role="presentation" class="dropdown"><a href="about.jsp"
+						id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
+						aria-controls="myTabDrop1-contents">国际交流 </a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"
+							id="myTabDrop1-contents">
+							<li><a href="about.jsp" >交流概况</a>
+							</li>
+							<li><a href="portfolio.jsp" >交流项目</a>
+							</li>
+							<li><a href="index.jsp">留学&来访工大</a>
+							</li>
+							 
+						</ul>
 					</li>
 					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
 					</li>
@@ -280,11 +261,6 @@ body {
 			</li>
 		</ul>
 	</div>
-
-
-
-
-
 
 
 	<div class="features">

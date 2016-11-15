@@ -218,8 +218,7 @@
 		-->
 	</div>
 	</div>
-	<!-- //services -->
-	<!-- team -->
+
 	<div class="team agileits">
 		<div class="team-info">
 			<div class="container">
