@@ -68,22 +68,25 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="主页">主页</a>
+					<li><a href="index.jsp" data-hover="主页">主页</a></li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li role="presentation" class="dropdown"><a href="about.jsp"
+						id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
+						aria-controls="myTabDrop1-contents">国际交流 </a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"
+							id="myTabDrop1-contents">
+							<li><a href="about.jsp" >交流概况</a>
+							</li>
+							<li><a href="portfolio.jsp" >交流项目</a>
+							</li>
+							<li><a href="index.jsp">留学&来访工大</a>
+							</li>
+							 
+						</ul>
 					</li>
-					<li><a href="about.jsp" data-hover="关于我们">关于我们</a>
-					</li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a>
-					</li>
-					<li><a href="portfolio.jsp" class="active">通知通告</a>
-					</li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
-					</li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
-					</li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a>
-					</li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
-					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -98,11 +101,15 @@
 			<div class="container">
 				<br> <br> <br> <br> <br> <br> <br>
 				<br> <br> <br> <br> <br> <br> <br>
-				<br> <br> <br> <br> <br> <br> <br>
 
 			</div>
 		</div>
 	</div>
+
+
+
+
+
 
 
 	<div id="portfolio" class="portfolio">
@@ -117,8 +124,6 @@
 					<li data-filter="4">亚洲交流</li>
 					<li data-filter="5">非洲交流</li>
 					<li data-filter="6">联合培养</li>
-					<li data-filter="7">外国学者来华</li>
-					<li data-filter="8">留学生来华</li>
 				</ul>
 				<div class="filtr-container">
 
@@ -213,7 +218,7 @@
 								class="img-responsive img-style row2" /> </a>
 						</div>
 					</div>
-					
+
 
 					<div class="col-md-4 filtr-item" data-category="4"
 						data-sort="台湾交通大学">
@@ -241,21 +246,8 @@
 						</div>
 					</div>
 
-					<div class="col-md-4 filtr-item" data-category="7"
-						data-sort="伯明翰大学">
-						<div class="agileits-img">
-							<a href="images/p8.jpg" class="swipebox"
-								title="Fabrice Labeau教授现为麦吉尔大学工程学院副院长，
- 								是IEEE Vehicular Technology Society (VTS)的上一任主席（President），
- 								目前正担任IEEE VTS的副主席及IEEE Sensors Council的主席，
- 								近年来在IEEE高水平期刊和国际会议上发表文章百余篇，并担任了IEEE VTS等多个国际会议的大会主席或技术委员会主席。">
-								<img src="images/p8.jpg" alt=""
-								class="img-responsive img-style row2" /> </a>
-						</div>
-					</div>
-					
-										
-					
+
+
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -273,8 +265,7 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a>
-				</li>
+					href="269077431@qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>
@@ -283,16 +274,11 @@
 	<div class="footer-icons">
 		<div class="container">
 			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a>
-				</li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a>
-				</li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a>
-				</li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a>
-				</li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a>
-				</li>
+				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
+				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
+				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
+				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
+				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
 			</ul>
 
 		</div>

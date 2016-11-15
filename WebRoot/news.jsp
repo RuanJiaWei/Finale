@@ -70,10 +70,21 @@
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
 					<li><a href="index.jsp" data-hover="主页">主页</a></li>
-					<li><a href="about.jsp" data-hover="关于我们">关于我们</a></li>
 					<li><a href="news.jsp" class="active">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
+					<li role="presentation" class="dropdown"><a href="about.jsp"
+						id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
+						aria-controls="myTabDrop1-contents">国际交流 </a>
+						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"
+							id="myTabDrop1-contents">
+							<li><a href="about.jsp" >交流概况</a>
+							</li>
+							<li><a href="portfolio.jsp" >交流项目</a>
+							</li>
+							<li><a href="index.jsp" >留学&来访工大</a>
+							</li>
+
+						</ul>
+					</li>
 					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
 					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
 					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
@@ -101,7 +112,7 @@
 			<div class="container">
 				<h3 class="agileits-title">活动导航</h3>
 				<div class="gallary_gds">
-				
+
 					<div class="filtr-container">
 						<div class="news-info">
 							<div class="col-md-4 news-grids filtr-item" data-category="1"
@@ -134,12 +145,12 @@
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
-							
+
 							<div class="col-md-4 news-grids filtr-item" data-category="3">
 								<h4>
 									<span>学子交流</span>
 								</h4>
-								
+
 								<a href="<%=basePath%>/c1/newslist.action?newstag=exchange"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>

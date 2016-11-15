@@ -247,35 +247,35 @@ body {
 			<li><a href="#cube"><img
 					src="<%=basePath%>window/images/example/001.jpg" class="cube" /> </a>
 				<div class="label_text">
-					<p>cube</p>
+					<p>慕尼黑工业大学亚洲校区负责人访问我校</p>
 				</div>
 			</li>
 			<li><a href="#cubeRandom"><img
 					src="<%=basePath%>window/images/example/002.jpg" class="cubeRandom" />
 			</a>
 				<div class="label_text">
-					<p>cubeRandom</p>
+					<p>我校代表参加第七届中欧高等教育研讨会</p>
 				</div>
 			</li>
 			<li><a href="#block"><img
 					src="<%=basePath%>window/images/example/003.jpg" class="block" />
 			</a>
 				<div class="label_text">
-					<p>block</p>
+					<p>HICA万圣节派对成功举办</p>
 				</div>
 			</li>
 			<li><a href="#cubeStop"><img
 					src="<%=basePath%>window/images/example/004.jpg" class="cubeStop" />
 			</a>
 				<div class="label_text">
-					<p>cubeStop</p>
+					<p>第九届哈尔滨工业大学模拟联合国大会代表招募</p>
 				</div>
 			</li>
 			<li><a href="#cubeStop"><img
 					src="<%=basePath%>window/images/example/005.jpg" class="cubeStop" />
 			</a>
 				<div class="label_text">
-					<p>cubeStop</p>
+					<p>欧亚国际协会会长冯耀武一行来访</p>
 				</div>
 			</li>
 		</ul>

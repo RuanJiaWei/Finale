@@ -9,125 +9,85 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-	<base href="<%=basePath%>">
-	
-	
-	<meta http-equiv="pragma" content="no-cache">
-	<meta http-equiv="cache-control" content="no-cache">
-	<meta http-equiv="expires" content="0">
-	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<meta http-equiv="description" content="This is my page">
-	<!--
+<base href="<%=basePath%>">
+
+
+<meta http-equiv="pragma" content="no-cache">
+<meta http-equiv="cache-control" content="no-cache">
+<meta http-equiv="expires" content="0">
+<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+<meta http-equiv="description" content="This is my page">
+<!--
 		<link rel="stylesheet" type="text/css" href="styles.css">
 		-->
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="keywords" content="" />
-	<!-- //Custom Theme files -->
-	<link href="css/bootstrap.css" type="text/css" rel="stylesheet"
-		media="all">
-	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-	<!-- js -->
-	<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
-	<!-- //js -->
-	<!-- web-fonts -->
-	<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet'
-		type='text/css'>
-	<link
-		href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
-		rel='stylesheet' type='text/css'>
-	<!-- //web-fonts -->
-	<!-- font-awesome icons -->
-	<link href="css/font-awesome.css" rel="stylesheet">
-	
-	<script type="text/javascript" src="js/move-top.js"></script>
-	<script type="text/javascript" src="js/easing.js"></script>
-	<script type="text/javascript">
-		jQuery(document).ready(function($) {
-			$(".scroll").click(function(event) {
-				event.preventDefault();
-	
-				$('html,body').animate({
-					scrollTop : $(this.hash).offset().top
-				}, 1000);
-			});
+<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="keywords" content="" />
+<!-- //Custom Theme files -->
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet"
+	media="all">
+<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+<!-- js -->
+<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+<!-- //js -->
+<!-- web-fonts -->
+<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet'
+	type='text/css'>
+<link
+	href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+	rel='stylesheet' type='text/css'>
+<!-- //web-fonts -->
+<!-- font-awesome icons -->
+<link href="css/font-awesome.css" rel="stylesheet">
+
+<script type="text/javascript" src="js/move-top.js"></script>
+<script type="text/javascript" src="js/easing.js"></script>
+<script type="text/javascript">
+	jQuery(document).ready(function($) {
+		$(".scroll").click(function(event) {
+			event.preventDefault();
+
+			$('html,body').animate({
+				scrollTop : $(this.hash).offset().top
+			}, 1000);
 		});
-	</script>
-	<!-- //end-smooth-scrolling -->
-	<link href="<%=basePath%>window/css/styles.css" type="text/css"
-		media="all" rel="stylesheet" />
-	<style type="text/css">
-	#topmenu {
-		width: 810px;
-		margin: 40px auto 0 auto;
-		height: 40px;
-		position: relative;
-	}
-	
-	#topmenu ul {
-		margin: 0;
-		padding: 0;
-	}
-	
-	#topmenu ul li {
-		float: left;
-		font-size: 12px;
-		list-style: none;
-		background: #222;
-		position: relative;
-		text-align: center;
-		text-transform: uppercase;
-		width: 70px;
-		margin: 0 10px;
-		display: inline;
-		line-height: 30px;
-	}
-	
-	#topmenu ul li a {
-		color: #aaa;
-		text-decoration: none;
-	}
-	
-	#topmenu ul li a:hover {
-		color: #fff;
-	}
-	
-	#topmenu ul li.active a {
-		color: #fff;
-		font-weight: 800;
-	}
-	
-	.box_skitter {
-		margin: 40px auto;
-	}
-	</style>
-	<!-- Skitter Styles -->
-	<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
-		media="all" rel="stylesheet" />
-	
-	<!-- Skitter JS -->
-	<script type="text/javascript" language="javascript"
-		src="<%=basePath%>window/js/jquery-1.6.3.min.js"></script>
-	<script type="text/javascript" language="javascript"
-		src="<%=basePath%>window/js/jquery.easing.1.3.js"></script>
-	<script type="text/javascript" language="javascript"
-		src="<%=basePath%>window/js/jquery.skitter.min.js"></script>
-	
-	<!-- Init Skitter -->
-	<script type="text/javascript" language="javascript">
-		$(document).ready(function() {
-			$('.box_skitter_large').skitter({
-				theme : 'clean',
-				numbers_align : 'center',
-				progressbar : true,
-				dots : true,
-				preview : true
-			});
+	});
+</script>
+<!-- //end-smooth-scrolling -->
+<link href="<%=basePath%>window/css/styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+<style type="text/css">
+.box_skitter {
+	margin: 40px auto;
+}
+</style>
+<!-- Skitter Styles -->
+<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+
+<!-- Skitter JS -->
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.skitter.min.js"></script>
+
+<!-- Init Skitter -->
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme : 'clean',
+			numbers_align : 'center',
+			progressbar : true,
+			dots : true,
+			preview : true
 		});
-	</script>
-	
+	});
+</script>
+
 </head>
 <body>
 	<!-- top-nav -->
@@ -143,22 +103,12 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" class="active">主页</a>
-					</li>
-					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a>
-					</li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a>
-					</li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
-					</li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
-					</li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
-					</li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a>
-					</li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
-					</li>
+					<li><a href="index.jsp" class="active">主页</a></li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li><a href="about.jsp" data-hover="国际交流">国际交流</a></li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -174,13 +124,7 @@
 					<h2 yle="color:yellow">
 						<a href="index.jsp"> Welcome to Harbin Institute of Technology</a>
 					</h2>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
-					<br>
+					<br> <br> <br> <br> <br> <br> <br>
 					<br>
 					<div class="banner-icons">
 						<ul class="social"></ul>
@@ -192,24 +136,37 @@
 	</div>
 
 
-<div class="box_skitter box_skitter_large">
-	<ul>
-		<li><a href="#cube"><img src="<%=basePath %>window/images/example/001.jpg" class="cube" /></a><div class="label_text"><p>慕尼黑工业大学亚洲校区负责人访问我校</p></div></li>
-		<li><a href="#cubeRandom"><img src="<%=basePath %>window/images/example/002.jpg" class="cubeRandom" /></a><div class="label_text"><p>我校代表参加第七届中欧高等教育研讨会</p></div></li>
-		<li><a href="#block"><img src="<%=basePath %>window/images/example/003.jpg" class="block"  /></a><div class="label_text"><p>HICA万圣节派对成功举办</p></div></li>
-		<li><a href="#cubeStop"><img src="<%=basePath %>window/images/example/004.jpg" class="cubeStop" /></a><div class="label_text"><p>第九届哈尔滨工业大学模拟联合国大会代表招募</p></div></li>	
-	</ul>
-</div>
-
-
-
-
-
-
-
-
-
-
+	<div class="box_skitter box_skitter_large">
+		<ul>
+			<li><a href="#cube"><img
+					src="<%=basePath%>window/images/example/006.jpg" class="cube" /> </a>
+				<div class="label_text">
+					<p>俱怀逸兴壮思飞 ——哈工大与中国航天60年</p>
+				</div>
+			</li>
+			<li><a href="#cubeRandom"><img
+					src="<%=basePath%>window/images/example/007.jpg" class="cubeRandom" />
+			</a>
+				<div class="label_text">
+					<p>“紫丁香一号”卫星试验队“出征”荷兰</p>
+				</div>
+			</li>
+			<li><a href="#block"><img
+					src="<%=basePath%>window/images/example/008.jpg" class="block" />
+			</a>
+				<div class="label_text">
+					<p>面向百年 聚焦一流 加快推进教育综合改革 2016年暑期工作会议召开</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/009.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>我校在环境光催化技术研究领域取得新成果</p>
+				</div>
+			</li>
+		</ul>
+	</div>
 
 
 
@@ -368,8 +325,7 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a>
-				</li>
+					href="269077431@qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>
