@@ -51,9 +51,153 @@
 		});
 	});
 </script>
-<!-- //end-smooth-scrolling -->
+
+<meta name="author" content="angtian">
+<style>
+body {
+	padding: 0;
+	margin: 0 10px;
+}
+
+.title {
+	padding: 0;
+	margin: 10px 0;
+	font: 700 18px/1.5 \5fae\8f6f\96c5\9ed1;
+	text-align: center;
+}
+
+.title a {
+	font: 400 14px/1.5 Tahoma;
+	margin-left: 20px;
+}
+
+.example {
+	position: absolute;
+	top: 150px;
+	left: 50%;
+	margin-left: -275px;
+	font-size: 12px;
+}
+
+.example .item {
+	border: 1px solid #85BEE5;
+}
+
+.example input {
+	color: #404040;
+	padding: 3px;
+	width: 170px;
+	height: 18px;
+	line-height: 18px;
+	border: 1px solid #AFAFAF;
+	font: 12px/18px Arial;
+}
+
+.example button {
+	margin-right: 50px;
+}
+
+.checkie6 {
+	padding: 3px;
+	width: 178px;
+	border: 1px solid #AFAFAF;
+	font: 12px/1.5 Arial;
+}
+</style>
+<script src="<%=basePath %>clock/yui-min.js"></script>
+<script>
+	YUI({
+		modules : {
+			'trip-calendar' : {
+				fullpath : 'clock/trip-calendar.js',
+				type : 'js',
+				requires : [ 'trip-calendar-css' ]
+			},
+			'trip-calendar-css' : {
+				fullpath : 'clock/trip-calendar.css',
+				type : 'css'
+			}
+		}
+	}).use('trip-calendar', function(Y) {
+
+		/**
+		 * 弹出式日历实例
+		 * 将日历与指定的触发元素绑定
+		 * 日历可根据浏览器窗口大小，自动调整显示位置
+		 */
+		var oCal = new Y.TripCalendar({
+			//绑定日历的节点，支持选择器模式，可批量设置（必选）
+			triggerNode : '.J_Item, #J_Item-1, #J_Item-2, button, .J_Link'
+		});
+
+		oCal.on('dateclick', function(e) {
+			this.getCurrentNode().setAttribute('data-date', e.date);
+		});
+
+		//显示日历时自定义事件
+		oCal.on('show', function() {
+			var v = this.getCurrentNode().getAttribute('data-date');
+			this.set('date', v || new Date);
+			this.set('selectedDate', v).render();
+		});
+
+		//解决chrome的foucs事件bug
+		Y.on('click', function(e) {
+			e.currentTarget.focus();
+		}, 'button, .J_Link');
+	});
+</script>
+
+<link href="<%=basePath%>window/css/styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+<style type="text/css">
+
+
+.box_skitter {
+	margin: 20px auto;
+}
+</style>
+<!-- Skitter Styles -->
+<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+
+<!-- Skitter JS -->
+<script type="text/javascript" language="javascript"
+	src="<%=basePath %>window/js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath %>window/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath %>window/js/jquery.skitter.min.js"></script>
+
+<!-- Init Skitter -->
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme : 'clean',
+			numbers_align : 'center',
+			progressbar : true,
+			dots : true,
+			preview : true,
+			
+		});
+	});
+</script>
+
+
+
+
 </head>
 <body>
+
+
+
+
+
+
+
+
+
+
 	<!-- top-nav -->
 	<div class="top-nav">
 		<nav class="navbar navbar-default">
@@ -67,14 +211,22 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" class="active">主页</a></li>
-					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a></li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="index.jsp" class="active">主页</a>
+					</li>
+					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a>
+					</li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a>
+					</li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
+					</li>
+					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
+					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
+					</li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a>
+					</li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -85,48 +237,114 @@
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">
-				<div class="banner-text">
-					<h1>
-						news in
-						<s:property value="date" />
-					</h1>
-					<br> <br> <br> <br> <br> <br> <br>
-					<br> <br> <br> <br>
-				</div>
+				<div class="banner-text"></div>
 			</div>
 		</div>
 	</div>
 
-	<div class="single">
-		<div class="container">
-			<table>
-				<s:iterator value="newsitems">
-					<tr>
-						<td><div class="wthree_single_grid">
-								<a href="newsdetails.jsp">
-									<h4>
-										<span class="label label-danger"> <s:property
-												value="newstag" /> </span> | 
+	<div class="box_skitter box_skitter_large">
+		<ul>
+			<li><a href="#cube"><img
+					src="<%=basePath%>window/images/example/001.jpg" class="cube" /> </a>
+				<div class="label_text">
+					<p>cube</p>
+				</div>
+			</li>
+			<li><a href="#cubeRandom"><img
+					src="<%=basePath%>window/images/example/002.jpg" class="cubeRandom" />
+			</a>
+				<div class="label_text">
+					<p>cubeRandom</p>
+				</div>
+			</li>
+			<li><a href="#block"><img
+					src="<%=basePath%>window/images/example/003.jpg" class="block" />
+			</a>
+				<div class="label_text">
+					<p>block</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/004.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>cubeStop</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/005.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>cubeStop</p>
+				</div>
+			</li>
+		</ul>
+	</div>
 
-									</h4> </a>
-							</div></td>
-							<td><h2 id="h1.-bootstrap-heading">
-								<s:property value="newstitle"/><a class="anchorjs-link"
-									href="#h1.-bootstrap-heading"><span class="anchorjs-icon"></span>
-								</a>
-							</h2>
-						</td>
-						<td class="type-info"><s:property value="date"/></td>
-					</tr>
-				</s:iterator>
-			</table>
+
+
+
+
+
+
+	<div class="features">
+		<div class="container">
+			<h3 class="agileits-title">
+				<s:property value="newstag" />
+			</h3>
+			<div class="features-row">
+				<div class="col-md-4 features-right">
+					<div class="features-grid">
+						<img src="images/img3.jpg" class="img-responsive" alt="" />
+					</div>
+					<div class="features-grid">
+						<form action="<%=basePath%>/c1/newslistbydate.action?date=8-1" method="post">
+							<input type="text" class="J_Item"  />
+							<input type="submit" value="查询">
+						</form>
+					</div>
+				</div>
+				<div class="col-md-8 features-left">
+					<table>
+						<s:iterator value="newsitems">
+							<tr>
+								<td><div class="wthree_single_grid">
+										<a href="newsdetails.jsp">
+											<h4>
+												<span class="label label-danger"> <s:property
+														value="newstag" /> </span> |
+
+											</h4> </a>
+									</div>
+								</td>
+								<td><h2 id="h1.-bootstrap-heading">
+										<s:property value="newstitle" />
+										<a class="anchorjs-link" href="#h1.-bootstrap-heading"><span
+											class="anchorjs-icon"></span> </a>
+									</h2></td>
+								<td class="type-info"><s:property value="date" />
+								</td>
+
+							</tr>
+
+						</s:iterator>
+					</table>
+
+
+
+				</div>
+				<div class="clearfix"></div>
+			</div>
 		</div>
 	</div>
 
-	<div class="single">
-		<div class="container">
-			<p>it is a test</p>
 
+
+
+
+	<div class="hit icom">
+		<div class="container">
+			<img alt="" src="images/img7.jpg">
 		</div>
 	</div>
 
@@ -137,8 +355,8 @@
 					Xidazhi Street, Nangang District, Harbin, Heilongjiang Province,
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
-				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="qq.com"> 269077431@qq.com</a></li>
+				<li><i class="fa fa-envelope" aria-hidden="true"></i>
+					269077431@qq.com</li>
 			</ul>
 		</div>
 	</div>
@@ -195,5 +413,6 @@
     ================================================== -->
 	<!-- Placed at the end of the document so the pages load faster -->
 	<script src="js/bootstrap.js"></script>
+
 </body>
 </html>

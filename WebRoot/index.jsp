@@ -9,50 +9,125 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-<base href="<%=basePath%>">
-
-
-<meta http-equiv="pragma" content="no-cache">
-<meta http-equiv="cache-control" content="no-cache">
-<meta http-equiv="expires" content="0">
-<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-<meta http-equiv="description" content="This is my page">
-<title>Home</title>
-<!-- Custom Theme files -->
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<meta name="keywords" content="" />
-<!-- //Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet"
-	media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<!-- js -->
-<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
-<!-- //js -->
-<!-- web-fonts -->
-<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet'
-	type='text/css'>
-<link
-	href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
-	rel='stylesheet' type='text/css'>
-<!-- //web-fonts -->
-<!-- font-awesome icons -->
-<link href="css/font-awesome.css" rel="stylesheet">
-
-<script type="text/javascript" src="js/move-top.js"></script>
-<script type="text/javascript" src="js/easing.js"></script>
-<script type="text/javascript">
-	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event) {
-			event.preventDefault();
-
-			$('html,body').animate({
-				scrollTop : $(this.hash).offset().top
-			}, 1000);
+	<base href="<%=basePath%>">
+	
+	
+	<meta http-equiv="pragma" content="no-cache">
+	<meta http-equiv="cache-control" content="no-cache">
+	<meta http-equiv="expires" content="0">
+	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+	<meta http-equiv="description" content="This is my page">
+	<!--
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		-->
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="keywords" content="" />
+	<!-- //Custom Theme files -->
+	<link href="css/bootstrap.css" type="text/css" rel="stylesheet"
+		media="all">
+	<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+	<!-- js -->
+	<script src="http://cdn.bootcss.com/jquery/2.2.3/jquery.min.js"></script>
+	<!-- //js -->
+	<!-- web-fonts -->
+	<link href='http://fonts.useso.com/css?family=Niconne' rel='stylesheet'
+		type='text/css'>
+	<link
+		href='http://fonts.useso.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic'
+		rel='stylesheet' type='text/css'>
+	<!-- //web-fonts -->
+	<!-- font-awesome icons -->
+	<link href="css/font-awesome.css" rel="stylesheet">
+	
+	<script type="text/javascript" src="js/move-top.js"></script>
+	<script type="text/javascript" src="js/easing.js"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event) {
+				event.preventDefault();
+	
+				$('html,body').animate({
+					scrollTop : $(this.hash).offset().top
+				}, 1000);
+			});
 		});
-	});
-</script>
-<!-- //end-smooth-scrolling -->
+	</script>
+	<!-- //end-smooth-scrolling -->
+	<link href="<%=basePath%>window/css/styles.css" type="text/css"
+		media="all" rel="stylesheet" />
+	<style type="text/css">
+	#topmenu {
+		width: 810px;
+		margin: 40px auto 0 auto;
+		height: 40px;
+		position: relative;
+	}
+	
+	#topmenu ul {
+		margin: 0;
+		padding: 0;
+	}
+	
+	#topmenu ul li {
+		float: left;
+		font-size: 12px;
+		list-style: none;
+		background: #222;
+		position: relative;
+		text-align: center;
+		text-transform: uppercase;
+		width: 70px;
+		margin: 0 10px;
+		display: inline;
+		line-height: 30px;
+	}
+	
+	#topmenu ul li a {
+		color: #aaa;
+		text-decoration: none;
+	}
+	
+	#topmenu ul li a:hover {
+		color: #fff;
+	}
+	
+	#topmenu ul li.active a {
+		color: #fff;
+		font-weight: 800;
+	}
+	
+	.box_skitter {
+		margin: 40px auto;
+	}
+	</style>
+	<!-- Skitter Styles -->
+	<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
+		media="all" rel="stylesheet" />
+	
+	<!-- Skitter JS -->
+	<script type="text/javascript" language="javascript"
+		src="<%=basePath%>window/js/jquery-1.6.3.min.js"></script>
+	<script type="text/javascript" language="javascript"
+		src="<%=basePath%>window/js/jquery.easing.1.3.js"></script>
+	<script type="text/javascript" language="javascript"
+		src="<%=basePath%>window/js/jquery.skitter.min.js"></script>
+	
+	<!-- Init Skitter -->
+	<script type="text/javascript" language="javascript">
+		$(document).ready(function() {
+			$('.box_skitter_large').skitter({
+				theme : 'clean',
+				numbers_align : 'center',
+				progressbar : true,
+				dots : true,
+				preview : true
+			});
+		});
+	</script>
+	
 </head>
 <body>
 	<!-- top-nav -->
@@ -68,22 +143,30 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" class="active">主页</a></li>
-					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a></li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
-					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a></li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="index.jsp" class="active">主页</a>
+					</li>
+					<li><a href="about.jsp" data-hover="关于我们"> 关于我们</a>
+					</li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a>
+					</li>
+					<li><a href="portfolio.jsp" data-hover="通知通告">通知通告</a>
+					</li>
+					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
+					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
+					</li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a>
+					</li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		</nav>
 	</div>
-	
-	
+
+
 	<div class="banner">
 		<div class="banner-info">
 			<div class="container">
@@ -91,27 +174,56 @@
 					<h2 yle="color:yellow">
 						<a href="index.jsp"> Welcome to Harbin Institute of Technology</a>
 					</h2>
-					<br><br><br><br><br><br><br><br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
+					<br>
 					<div class="banner-icons">
 						<ul class="social"></ul>
 					</div>
 				</div>
-				
+
 			</div>
 		</div>
 	</div>
-	
-	
-	
+
+
+<div class="box_skitter box_skitter_large">
+	<ul>
+		<li><a href="#cube"><img src="<%=basePath %>window/images/example/001.jpg" class="cube" /></a><div class="label_text"><p>慕尼黑工业大学亚洲校区负责人访问我校</p></div></li>
+		<li><a href="#cubeRandom"><img src="<%=basePath %>window/images/example/002.jpg" class="cubeRandom" /></a><div class="label_text"><p>我校代表参加第七届中欧高等教育研讨会</p></div></li>
+		<li><a href="#block"><img src="<%=basePath %>window/images/example/003.jpg" class="block"  /></a><div class="label_text"><p>HICA万圣节派对成功举办</p></div></li>
+		<li><a href="#cubeStop"><img src="<%=basePath %>window/images/example/004.jpg" class="cubeStop" /></a><div class="label_text"><p>第九届哈尔滨工业大学模拟联合国大会代表招募</p></div></li>	
+	</ul>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 	<div class="welcome">
 		<div class="container">
 			<h3 class="agileits-title">Welcome to</h3>
 			<div class="welcome-row">
 				<div class="col-md-4 welcome-grids">
 					<h4>Harbin Institute of Technology</h4>
-					<p>HIT was founded in 1920. our aim is to be the first class university in 
-					the world. we have the best astronautics in China.</p>
-					<a href="newsdetails.jsp" class="button12"><span>Read More</span> </a>
+					<p>HIT was founded in 1920. our aim is to be the first class
+						university in the world. we have the best astronautics in China.</p>
+					<a href="newsdetails.jsp" class="button12"><span>Read
+							More</span> </a>
 				</div>
 				<div class="col-md-4 welcome-grids welcome-grids2">
 					<img src="images/img1.jpg" class="img-responsive" alt="" />
@@ -119,8 +231,7 @@
 					<p>Studing in such a beautiful place</p>
 				</div>
 				<div class="col-md-4 welcome-grids welcome-grids2">
-					<img src="images/img2.jpeg" class="img-responsive" alt="" />
-					<br>
+					<img src="images/img2.jpeg" class="img-responsive" alt="" /> <br>
 					<h6>life in HIT</h6>
 					<p>enjoy the icy world here</p>
 				</div>
@@ -128,8 +239,8 @@
 			</div>
 		</div>
 	</div>
-	
-	
+
+
 	<div class="services">
 		<div class="container">
 			<h3 class="agileits-title">Services</h3>
@@ -166,7 +277,9 @@
 						<div class="icon-holder">
 							<span class="fa fa-list-alt icon" aria-hidden="true"></span>
 						</div>
-						<h4 class="mission"><a href="contact.jsp">contact us</a></h4>
+						<h4 class="mission">
+							<a href="contact.jsp">contact us</a>
+						</h4>
 						<p class="description">we will serve you</p>
 					</div>
 				</div>
@@ -200,8 +313,7 @@
 						</div>
 						<div class="col-xs-9 features-grid-right">
 							<h4>专任教师</h4>
-							<p>中国科学院、工程院院士35人，正高级职务教师975人
-							副高级职务教师1222人，在岗博导1093人</p>
+							<p>中国科学院、工程院院士35人，正高级职务教师975人 副高级职务教师1222人，在岗博导1093人</p>
 						</div>
 						<div class="clearfix"></div>
 					</div>
@@ -220,7 +332,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 	<div class="hit icom">
 		<div class="container">
 			<img alt="" src="images/img7.jpg">
@@ -228,9 +340,9 @@
 	</div>
 
 
-	<!--it is a test-->	
+	<!--it is a test-->
 	<div class="test">
-		<div class="container"> 
+		<div class="container">
 			<div class="test-row">
 				<div class="col-md-4 test-girds">
 					<p>hello world</p>
@@ -245,7 +357,7 @@
 			</div>
 		</div>
 	</div>
-	
+
 
 
 	<div class="address">
@@ -256,13 +368,14 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a>
+				</li>
 			</ul>
 		</div>
 	</div>
 
-	
-	
+
+
 	<div class="footer">
 		<div class="container">
 			<div class="footer-left">

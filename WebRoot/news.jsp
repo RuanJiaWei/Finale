@@ -99,23 +99,17 @@
 	<div class="news">
 		<div id="portfolio" class="portfolio">
 			<div class="container">
-				<h3 class="agileits-title">News</h3>
+				<h3 class="agileits-title">活动导航</h3>
 				<div class="gallary_gds">
-					<ul class="simplefilter">
-						<li data-filter="1" class="active">1</li>
-						<li data-filter="2">2</li>
-						<li data-filter="3">3</li>
-						<li data-filter="4">4</li>
-					</ul>
+				
 					<div class="filtr-container">
 						<div class="news-info">
 							<div class="col-md-4 news-grids filtr-item" data-category="1"
 								data-sort="aug">
 								<h4 data-hover="august">
-									<span>1</span>August
+									<span>学者来访</span>
 								</h4>
-								<p>今天CMU的图灵教授来哈工大开讲座</p>
-								<a href="<%=basePath%>/c1/newslist.action?date=8-1"
+								<a href="<%=basePath%>/c1/newslist.action?newstag=scho"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
@@ -124,50 +118,30 @@
 							<div class="col-md-4 news-grids filtr-item" data-category="2"
 								data-sort="aug">
 								<h4>
-									<span>10/16</span>August
+									<span>教师访外</span>
 								</h4>
-								<p>今天将会举办工大和莫斯科大学留学生交流活动</p>
-								<a href="newscatalogue.jsp" class="button12"><span>Read
+								<a href="<%=basePath%>/c1/newslist.action?newstag=prof"
+									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 
 							</div>
 
 							<div class="col-md-4 news-grids filtr-item" data-category="2">
 								<h4>
-									<span>05/16</span>Sep
+									<span>留学工大</span>
 								</h4>
-								<p>工大学生鹿在Harvard交流心得</p>
-								<a href="newscatalogue.jsp" class="button12"><span>Read
+								<a href="<%=basePath%>/c1/newslist.action?newstag=study"
+									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
-							<div class="clearfix"></div>
-
-
-
+							
 							<div class="col-md-4 news-grids filtr-item" data-category="3">
 								<h4>
-									<span>23/16</span>Oct
+									<span>学子交流</span>
 								</h4>
-								<p>HIT has an exchange programme with KTH</p>
-								<a href="newscatalogue.jsp" class="button12"><span>Read
-										More</span> </a>
-							</div>
-
-							<div class="col-md-4 news-grids filtr-item" data-category="3">
-								<h4>
-									<span>18/16</span>Oct
-								</h4>
-								<p>东京大学留学生在工大生活</p>
-								<a href="newscatalogue.jsp" class="button12"><span>Read
-										More</span> </a>
-							</div>
-
-							<div class="col-md-4 news-grids filtr-item" data-category="2">
-								<h4>
-									<span>22/16</span>NOv
-								</h4>
-								<p>Doctor che will go to Japan</p>
-								<a href="newscatalogue.jsp" class="button12"><span>Read
+								
+								<a href="<%=basePath%>/c1/newslist.action?newstag=exchange"
+									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
 

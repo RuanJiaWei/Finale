@@ -14,5 +14,9 @@
 			<result name="success">/newscatalogue.jsp</result>
 			<result name="fail">/news.jsp</result>
 		</action>
+		<action name="newslistbydate" class="newslist.newslistaction1">
+			<result name="success">/newscatalogue.jsp</result>
+			<result name="fail">/news.jsp</result>
+		</action>
 	</package>
 </struts>    

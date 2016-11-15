@@ -8,7 +8,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 
 import model.newsitem;
-public class newslistaction {
+public class newslistaction1 {
 	private String date;
 	private String newstag;
 	private String newstitle;
@@ -17,12 +17,12 @@ public class newslistaction {
 	private PreparedStatement prestatement;
 	private ArrayList<newsitem> newsitems=new ArrayList<newsitem>();
 
-	public newslistaction(){
+	public newslistaction1(){
 		conn=new connection.conn().getCon();
 	}
 	
 	public String execute(){
-		newsitems=findnewsitemsbytag();
+		newsitems=findnewsitemsbydate();
 		if(newsitems.size()>0){
 			return "success";
 		}
@@ -31,11 +31,12 @@ public class newslistaction {
 		}
 	}
 	
-	public ArrayList<newsitem> findnewsitemsbytag(){
+	
+	public ArrayList<newsitem> findnewsitemsbydate(){
 		ArrayList<newsitem> newsitems=new ArrayList<newsitem>();
 		try {
-			prestatement=conn.prepareStatement("select * from newsitem where newstag=?");
-			prestatement.setString(1, newstag);
+			prestatement=conn.prepareStatement("select * from newsitem where date=?");
+			prestatement.setString(1, date);
 			ResultSet rs=prestatement.executeQuery();
 			while(rs.next()){
 				newsitem newsitem=new newsitem();
@@ -52,7 +53,6 @@ public class newslistaction {
 		}
 	}
 	
-
 	
 	
 	public String getDate() {
