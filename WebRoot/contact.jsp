@@ -77,8 +77,6 @@
 					</li>
 					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
 					</li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
-					</li>
 					<li><a href="contact.jsp" class="active">Contact</a>
 					</li>
 				</ul>
@@ -168,7 +166,7 @@
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>

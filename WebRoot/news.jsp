@@ -1,4 +1,4 @@
-﻿<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
+<%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
 	String basePath = request.getScheme() + "://"
@@ -53,7 +53,42 @@
 		});
 	});
 </script>
-<!-- //end-smooth-scrolling -->
+
+
+<link href="<%=basePath%>window/css/styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+<style type="text/css">
+.box_skitter {
+	margin: 40px auto;
+}
+</style>
+
+<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.skitter.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme : 'clean',
+			numbers_align : 'center',
+			progressbar : true,
+			dots : true,
+			preview : true
+		});
+	});
+</script>
+
+
+
+
+
 </head>
 <body>
 	<!-- top-nav -->
@@ -76,11 +111,11 @@
 						aria-controls="myTabDrop1-contents">国际交流 </a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"
 							id="myTabDrop1-contents">
-							<li><a href="about.jsp" >交流概况</a>
+							<li><a href="about.jsp">交流概况</a>
 							</li>
-							<li><a href="portfolio.jsp" >交流项目</a>
+							<li><a href="portfolio.jsp">交流项目</a>
 							</li>
-							<li><a href="index.jsp" >留学&来访工大</a>
+							<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a>
 							</li>
 
 						</ul>
@@ -107,51 +142,106 @@
 		</div>
 	</div>
 
+	<h3 class="agileits-title">最新新闻</h3>
+	<div class="box_skitter box_skitter_large">
+
+		<ul>
+			<li><a href="#cube"><img
+					src="<%=basePath%>window/images/example/001.jpg" class="cube" /> </a>
+				<div class="label_text">
+					<p>慕尼黑工业大学亚洲校区负责人访问我校</p>
+				</div>
+			</li>
+			<li><a href="#cubeRandom"><img
+					src="<%=basePath%>window/images/example/002.jpg" class="cubeRandom" />
+			</a>
+				<div class="label_text">
+					<p>我校代表参加第七届中欧高等教育研讨会</p>
+				</div>
+			</li>
+			<li><a href="#block"><img
+					src="<%=basePath%>window/images/example/003.jpg" class="block" />
+			</a>
+				<div class="label_text">
+					<p>HICA万圣节派对成功举办</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/004.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>第九届哈尔滨工业大学模拟联合国大会代表招募</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/005.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>欧亚国际协会会长冯耀武一行来访</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
 	<div class="news">
 		<div id="portfolio" class="portfolio">
 			<div class="container">
-				<h3 class="agileits-title">活动导航</h3>
+				<h3 class="agileits-title">新闻导航</h3>
 				<div class="gallary_gds">
 
 					<div class="filtr-container">
 						<div class="news-info">
-							<div class="col-md-4 news-grids filtr-item" data-category="1"
+							<div class="col-md-6 news-grids filtr-item" data-category="1"
 								data-sort="aug">
 								<h4 data-hover="august">
 									<span>学者来访</span>
 								</h4>
-								<a href="<%=basePath%>/c1/newslist.action?newstag=scho"
+								<p>工大每年都接待上千名來自世界各地的學者，各個學科的人才匯聚工大，他們站在時代的最前沿，俯瞰著整個世界</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=sampletag"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
 
 
-							<div class="col-md-4 news-grids filtr-item" data-category="2"
+							<div class="col-md-6 news-grids filtr-item" data-category="2"
 								data-sort="aug">
 								<h4>
 									<span>教师访外</span>
 								</h4>
-								<a href="<%=basePath%>/c1/newslist.action?newstag=prof"
+								
+								<p>工大每年都會公費派出多名校内教師到世界各地參加頂尖會議或者進行學術交流與深造</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=sampletag"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 
 							</div>
-
-							<div class="col-md-4 news-grids filtr-item" data-category="2">
+							<div class="clearfix"></div>
+						</div>
+						<div class="news-info">
+							<div class="col-md-6 news-grids filtr-item" data-category="2">
 								<h4>
 									<span>留学工大</span>
 								</h4>
-								<a href="<%=basePath%>/c1/newslist.action?newstag=study"
+								<p>来自世界各地的热爱科学与技术的同学，工大欢迎你！工大是一个思想交流的平台，能给提供自由的环境和优越的学习研究条件</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=sampletag"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
 
-							<div class="col-md-4 news-grids filtr-item" data-category="3">
+							<div class="col-md-6 news-grids filtr-item" data-category="3">
 								<h4>
 									<span>学子交流</span>
 								</h4>
-
-								<a href="<%=basePath%>/c1/newslist.action?newstag=exchange"
+								<p>越万里之溟濛兮，看凤之流光。工大的学子们，学校鼓励你去交流，看更广阔的世界，去开拓视野，培养眼界。</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=sampletag"
 									class="button12" data-hover="Read More"><span>Read
 										More</span> </a>
 							</div>
@@ -164,7 +254,27 @@
 		</div>
 	</div>
 
-
+	
+	
+	<div class="contact">
+		<div class="container">
+			<h3 class="agileits-title">查找</h3>
+			<div class="contact-w3ls-row">
+				<form action="<%=basePath %>/c1/newslist.action" method="post">
+					<input type="text" name="newstag" placeholder="First Name" required="">   
+					<input type="submit" value="SUBMIT">
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	
+	
+	
+	
+	
+	
+	
 	<div class="school-icon">
 		<div class="container">
 			<div class="col-md-10">

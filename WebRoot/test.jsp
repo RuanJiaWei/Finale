@@ -9,10 +9,9 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
 <html lang="en">
 <head>
-<title>Contact</title>
+<title>News</title>
 <!-- Custom Theme files -->
 <base href="<%=basePath%>">
-
 <meta http-equiv="pragma" content="no-cache">
 <meta http-equiv="cache-control" content="no-cache">
 <meta http-equiv="expires" content="0">
@@ -21,6 +20,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="" />
+
 
 <!-- //Custom Theme files -->
 <link href="css/bootstrap.css" type="text/css" rel="stylesheet"
@@ -53,7 +53,42 @@
 		});
 	});
 </script>
-<!-- //end-smooth-scrolling -->
+
+
+<link href="<%=basePath%>window/css/styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+<style type="text/css">
+.box_skitter {
+	margin: 40px auto;
+}
+</style>
+
+<link href="<%=basePath%>window/css/skitter.styles.css" type="text/css"
+	media="all" rel="stylesheet" />
+
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.easing.1.3.js"></script>
+<script type="text/javascript" language="javascript"
+	src="<%=basePath%>window/js/jquery.skitter.min.js"></script>
+
+<script type="text/javascript" language="javascript">
+	$(document).ready(function() {
+		$('.box_skitter_large').skitter({
+			theme : 'clean',
+			numbers_align : 'center',
+			progressbar : true,
+			dots : true,
+			preview : true
+		});
+	});
+</script>
+
+
+
+
+
 </head>
 <body>
 	<!-- top-nav -->
@@ -69,13 +104,8 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="Home">Home</a></li>
-					<li><a href="about.jsp" data-hover="About">About</a></li>
-					<li><a href="news.jsp" data-hover="News">News</a></li>
-					<li><a href="portfolio.jsp" data-hover="Portfolio">Portfolio</a>
-					</li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a></li>
-					<li><a href="contact.jsp" class="active">Contact</a></li>
+					<li><a href="index.jsp" data-hover="主页">主页</a></li>
+					<li><a href="news.jsp" class="active">新闻</a></li>
 					<li role="presentation" class="dropdown"><a href="about.jsp"
 						id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
 						aria-controls="myTabDrop1-contents">国际交流 </a>
@@ -83,45 +113,155 @@
 							id="myTabDrop1-contents">
 							<li><a href="about.jsp">交流概况</a>
 							</li>
-							<li><a href="portfolio.jsp" >交流项目</a>
+							<li><a href="portfolio.jsp">交流项目</a>
 							</li>
-							<li><a href="index.jsp" >留学&来访工大</a>
+							<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a>
 							</li>
-							 
-						</ul></li>
+
+						</ul>
+					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
 		</div>
 		</nav>
 	</div>
-	<!-- //top-nav -->
-	<!-- banner -->
+
 	<div class="banner about-banner">
 		<div class="banner-info">
 			<div class="container">
 				<div class="banner-text">
 					<h1>
-						<a href="index.jsp"> Knack</a>
+						<a href="index.jsp"> HIT news</a> <br> <br> <br> <br>
 					</h1>
 				</div>
 			</div>
 		</div>
 	</div>
-	<!-- //banner -->
-	<!-- contact -->
+
+	<h3 class="agileits-title">最新新闻</h3>
+	<div class="box_skitter box_skitter_large">
+
+		<ul>
+			<li><a href="#cube"><img
+					src="<%=basePath%>window/images/example/001.jpg" class="cube" /> </a>
+				<div class="label_text">
+					<p>慕尼黑工业大学亚洲校区负责人访问我校</p>
+				</div>
+			</li>
+			<li><a href="#cubeRandom"><img
+					src="<%=basePath%>window/images/example/002.jpg" class="cubeRandom" />
+			</a>
+				<div class="label_text">
+					<p>我校代表参加第七届中欧高等教育研讨会</p>
+				</div>
+			</li>
+			<li><a href="#block"><img
+					src="<%=basePath%>window/images/example/003.jpg" class="block" />
+			</a>
+				<div class="label_text">
+					<p>HICA万圣节派对成功举办</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/004.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>第九届哈尔滨工业大学模拟联合国大会代表招募</p>
+				</div>
+			</li>
+			<li><a href="#cubeStop"><img
+					src="<%=basePath%>window/images/example/005.jpg" class="cubeStop" />
+			</a>
+				<div class="label_text">
+					<p>欧亚国际协会会长冯耀武一行来访</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="news">
+		<div id="portfolio" class="portfolio">
+			<div class="container">
+				<h3 class="agileits-title">新闻导航</h3>
+				<div class="gallary_gds">
+
+					<div class="filtr-container">
+						<div class="news-info">
+							<div class="col-md-6 news-grids filtr-item" data-category="1"
+								data-sort="aug">
+								<h4 data-hover="august">
+									<span>学者来访</span>
+								</h4>
+								<p>工大每年都接待上千名來自世界各地的學者，各個學科的人才匯聚工大，他們站在時代的最前沿，俯瞰著整個世界</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=a"
+									class="button12" data-hover="Read More"><span>Read
+										More</span> </a>
+							</div>
+
+
+							<div class="col-md-6 news-grids filtr-item" data-category="2"
+								data-sort="aug">
+								<h4>
+									<span>教师访外</span>
+								</h4>
+								
+								<p>工大每年都會公費派出多名校内教師到世界各地參加頂尖會議或者進行學術交流與深造</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=教师访外"
+									class="button12" data-hover="Read More"><span>Read
+										More</span> </a>
+
+							</div>
+							<div class="clearfix"></div>
+						</div>
+						<div class="news-info">
+							<div class="col-md-6 news-grids filtr-item" data-category="2">
+								<h4>
+									<span>留学工大</span>
+								</h4>
+								<p>来自世界各地的热爱科学与技术的同学，工大欢迎你！工大是一个思想交流的平台，能给提供自由的环境和优越的学习研究条件</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=留学工大"
+									class="button12" data-hover="Read More"><span>Read
+										More</span> </a>
+							</div>
+
+							<div class="col-md-6 news-grids filtr-item" data-category="3">
+								<h4>
+									<span>学子交流</span>
+								</h4>
+								<p>越万里之溟濛兮，看凤之流光。工大的学子们，学校鼓励你去交流，看更广阔的世界，去开拓视野，培养眼界。</p>
+								<a href="<%=basePath%>/c1/newslist.action?newstag=交流心得"
+									class="button12" data-hover="Read More"><span>Read
+										More</span> </a>
+							</div>
+
+							<div class="clearfix"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	
+	
 	<div class="contact">
 		<div class="container">
-			<h3 class="agileits-title">Contact Us</h3>
+			<h3 class="agileits-title">查找</h3>
 			<div class="contact-w3ls-row">
-				<form action="#" method="post">
-					<input type="text" name="First Name" placeholder="First Name"
-						required=""> <input class="email" name="Last Name"
-						type="text" placeholder="Last Name" required=""> <input
-						type="text" name="Number" placeholder="Mobile Number" required="">
-					<input class="email" name="Email" type="text" placeholder="Email"
-						required="">
-					<textarea name="Message" placeholder="Message" required=""></textarea>
+				<form action="<%=basePath %>/c1/newslist.action" method="post">
+					<input type="text" name="newstag" placeholder="First Name" required="">   
 					<input type="submit" value="SUBMIT">
 				</form>
 			</div>
@@ -135,267 +275,30 @@
 	
 	
 	
-	
-	
-	
-	<section class="single-singe-area">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-9 col-xs-12 text-left col-sm-8">
-                        <div class="post-contents">
-                            <div class="news-img">
-                                <div class="news-date">
-                                    <p>19 Feb 2016</p>
-                                </div>
-                                <img src="images/news/news-thumb1.jpg" alt="">
-                            </div>
-                            <article class="post-details">
-                                <h3>Lorem ipsum dolor sit amet, consectetur.</h3>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit 
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab 
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. 
-                                    Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed 
-                                    quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat
-                                    voluptatem.
-                                </p>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit 
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab 
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
-                                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
-                                    quaerat voluptatem.
-                                </p>
-                            </article>
-                            <div class="video-post">
-                                <iframe src="https://www.youtube.com/embed/lrk4oY7UxpQ" allowfullscreen></iframe>
-                                <div class="clearfix"></div>
-                            </div>
-                            <article class="post-details">
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure 
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit.
-                                </p>
-                                <blockquote>
-                                    <span>“</span>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
-                                    nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui 
-                                    officia deserunt mollit.<span>”</span>
-                                </blockquote>
-                                <p>
-                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor 
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud 
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
-                                    dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                                    Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt 
-                                    mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit 
-                                    voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab
-                                    illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo 
-                                    enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia 
-                                    consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro 
-                                    quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, 
-                                    sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam 
-                                    quaerat voluptatem.
-                                </p>
-                            </article>
-                            <div class="button-with-icon">
-                                <a href="#" class="filled-button user">
-                                    <i class="fa fa-user"></i>
-                                    <b><span>Shakib Al Rifat,</span> Admin</b>
-                                </a>
-                                <a href="#" class="filled-button facebook">
-                                    <i class="fa fa-facebook-square"></i>
-                                    <b>Share <span>with</span> Facebook</b>
-                                </a>
-                                <a href="#" class="filled-button twitter">
-                                    <i class="fa fa-twitter"></i>
-                                    <b>Share <span>with</span> Twitter</b>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="related-post">
-                            <h2 class="section-title">Related <span>Stories</span></h2>
-                            <div class="related-post-left pull-left">
-                                <div class="thumbnail-news">
-                                    <div class="news-img pull-left">
-                                        <div class="news-date">
-                                            <p>17 Feb 2016</p>
-                                        </div>
-                                        <img src="images/home1/news2.jpg" alt="">
-                                    </div>
-                                    <div class="small-news pull-left">
-                                        <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="thumbnail-news">
-                                    <div class="news-img pull-left">
-                                        <div class="news-date">
-                                            <p>16 Feb 2016</p>
-                                        </div>
-                                        <img src="images/home1/news3.jpg" alt="">
-                                    </div>
-                                    <div class="small-news pull-left">
-                                        <h4><a href="#">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="related-post-right pull-right">
-                                <div class="thumbnail-news">
-                                    <div class="news-img pull-left">
-                                        <div class="news-date">
-                                            <p>16 Feb 2016</p>
-                                        </div>
-                                        <img src="images/home1/news4.jpg" alt="">
-                                    </div>
-                                    <div class="small-news pull-left">
-                                        <h4><a href="#">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                                <div class="thumbnail-news">
-                                    <div class="news-img pull-left">
-                                        <div class="news-date">
-                                            <p>14 Feb 2016</p>
-                                        </div>
-                                        <img src="images/home1/news5.jpg" alt="">
-                                    </div>
-                                    <div class="small-news pull-left">
-                                        <h4><a href="#">Ullamco laboris nisi ut aliquip ex ea commodo consequat.</a></h4>
-                                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod.</p>
-                                    </div>
-                                    <div class="clearfix"></div>
-                                </div>
-                            </div>
-                            <div class="clearfix"></div>
-                        </div>
-                    </div>
-                    <div class="col-md-3 col-xs-12 text-left col-sm-4">
-                        <aside class="widget">
-                            <h3 class="widget-title">Categories</h3>
-                            <ul>
-                                <li><a href="#">All News</a></li>
-                                <li><a href="#">Expanding Equality</a></li>
-                                <li><a href="#">Immigration Reform</a></li>
-                                <li><a href="#">Climate Change</a></li>
-                                <li><a href="#">Health Care</a></li>
-                                <li><a href="#">Jobs & the Economy</a></li>
-                                <li><a href="#">Stand with Women</a></li>
-                            </ul>
-                        </aside>
-                        <aside class="widget tag-cloud">
-                            <h3 class="widget-title">Tag <span>Cloud</span></h3>
-                            <a href="#" class="tags">Eco</a>
-                            <a href="#" class="tags">Creative</a>
-                            <a href="#" class="tags">Flag</a>
-                            <a href="#" class="tags">Cms</a>
-                            <a href="#" class="tags">Political</a>
-                            <a href="#" class="tags">Leader</a>
-                            <a href="#" class="tags">Politics</a>
-                            <a href="#" class="tags">Website</a>
-                            <a href="#" class="tags">Democracy</a>
-                        </aside>
-                        <aside class="widget">
-                            <h3 class="widget-title">Popular <span>Post</span></h3>
-                            <article class="widget-post">
-                                <h5>17 Feb 2016</h5>
-                                <a href="newsDetails.html">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</a>
-                            </article>
-                            <article class="widget-post">
-                                <h5>13 Feb 2016</h5>
-                                <a href="newsDetails.html">Labore et dolore magna aliqua. Ut enim ad minim.</a>
-                            </article>
-                            <article class="widget-post">
-                                <h5>12 Feb 2016</h5>
-                                <a href="newsDetails.html">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.</a>
-                            </article>
-                            <article class="widget-post">
-                                <h5>11 Feb 2016</h5>
-                                <a href="newsDetails.html">Lorem ipsum dolor sit amet, consectetur adip.</a>
-                            </article>
-                            <article class="widget-post">
-                                <h5>09 Feb 2016</h5>
-                                <a href="newsDetails.html">Laboris nisi ut aliquip ex ea commodo consequat.</a>
-                            </article>
-                        </aside>
-                    </div>
-                </div>
-            </div>
-        </section>
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	
-	<!-- //contact -->
-	<!-- map -->
-	<div class="map">
-		<iframe
-			src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d343829.1271629402!2d-122.61489066225299!3d47.681214398164556!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54906aba3648f20b%3A0xc5c4dedaafcead17!2sSeattle%2C+WA+98104!5e0!3m2!1sen!2sin!4v1461914461629"></iframe>
+	<div class="school-icon">
+		<div class="container">
+			<div class="col-md-10">
+				<img alt="" src="images/img7.jpg" align="middle">
+			</div>
+			<div class="clearfix"></div>
+		</div>
 	</div>
-	<!-- //map -->
-	<!-- address -->
+
+
 	<div class="address">
 		<div class="container">
 			<ul>
-				<li><i class="fa fa-map-marker" aria-hidden="true"></i>Broome
-					St, Canada, NY 10002, USA</li>
-				<li><i class="fa fa-phone" aria-hidden="true"></i> +033 111 222
-					4567</li>
+				<li><i class="fa fa-map-marker" aria-hidden="true"></i>No.92
+					Xidazhi Street, Nangang District, Harbin, Heilongjiang Province,
+					China</li>
+				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="mailto:info@example.com"> mail@example.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a></li>
 			</ul>
 		</div>
 	</div>
-	<!-- //address -->
-	<!-- footer-icons -->
-	<div class="footer-icons">
-		<div class="container">
-			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
-			</ul>
 
-		</div>
-	</div>
+
 	<!-- //footer-icons -->
 	<!-- footer -->
 	<div class="footer">
@@ -405,7 +308,7 @@
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>
@@ -437,3 +340,4 @@
 	<script src="js/bootstrap.js"></script>
 </body>
 </html>
+

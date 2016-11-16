@@ -197,7 +197,7 @@ body {
 							</li>
 							<li><a href="portfolio.jsp" >交流项目</a>
 							</li>
-							<li><a href="index.jsp">留学&来访工大</a>
+							<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a>
 							</li>
 							 
 						</ul>

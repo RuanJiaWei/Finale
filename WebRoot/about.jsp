@@ -71,10 +71,9 @@
 							id="myTabDrop1-contents">
 							<li><a href="about.jsp">交流概况</a></li>
 							<li><a href="portfolio.jsp">交流项目</a></li>
-							<li><a href="index.jsp">留学&来访工大</a></li>
+							<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a></li>
 
-						</ul></li>
-					<li><a href="codes.jsp" data-hover="Codes">Codes</a>
+						</ul>
 					</li>
 					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
 					</li>
@@ -105,8 +104,8 @@
 
 		</div>
 	</div>
-	<!-- //banner -->
-	<!-- about -->
+
+
 	<div class="about">
 		<div class="container">
 			<h3 class="agileits-title">交流概况</h3>
@@ -353,7 +352,7 @@
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>

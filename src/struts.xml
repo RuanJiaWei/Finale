@@ -18,5 +18,9 @@
 			<result name="success">/newscatalogue.jsp</result>
 			<result name="fail">/news.jsp</result>
 		</action>
+		<action name="itembycollege" class="itemlist.itemaction">
+			<result name="success">/itemdetails.jsp</result>
+			<result name="fail">/portfolio.jsp</result>
+		</action>
 	</package>
 </struts>    

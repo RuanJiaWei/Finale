@@ -68,25 +68,26 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" data-hover="主页">主页</a></li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
+					<li><a href="index.jsp" data-hover="主页">主页</a>
+					</li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a>
+					</li>
 					<li role="presentation" class="dropdown"><a href="about.jsp"
 						id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown"
 						aria-controls="myTabDrop1-contents">国际交流 </a>
 						<ul class="dropdown-menu" role="menu" aria-labelledby="myTabDrop1"
 							id="myTabDrop1-contents">
-							<li><a href="about.jsp" >交流概况</a>
-							</li>
-							<li><a href="portfolio.jsp" >交流项目</a>
-							</li>
-							<li><a href="index.jsp">留学&来访工大</a>
-							</li>
-							 
-						</ul>
+							<li><a href="about.jsp">交流概况</a></li>
+							<li><a href="portfolio.jsp">交流项目</a></li>
+							<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a></li>
+
+						</ul></li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
 					</li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a>
+					</li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -255,6 +256,18 @@
 	</div>
 
 
+	<div class="contact">
+		<div class="container">
+			<h3 class="agileits-title">查找</h3>
+			<div class="contact-w3ls-row">
+				<form action="<%=basePath %>/c1/itembycollege.action" method="post">
+					<input type="text" name="college" placeholder="First Name" required="">   
+					<input type="submit" value="SUBMIT">
+				</form>
+			</div>
+		</div>
+	</div>
+
 
 
 	<div class="address">
@@ -265,7 +278,8 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -274,11 +288,16 @@
 	<div class="footer-icons">
 		<div class="container">
 			<ul class="social">
-				<li class="facebook"><a href="#" class="fa fa-facebook"></a></li>
-				<li class="twitter"><a href=" " class="fa fa-twitter"></a></li>
-				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a></li>
-				<li class="behance"><a href=" " class="fa fa-behance"></a></li>
-				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a></li>
+				<li class="facebook"><a href="#" class="fa fa-facebook"></a>
+				</li>
+				<li class="twitter"><a href=" " class="fa fa-twitter"></a>
+				</li>
+				<li class="dribbble"><a href=" " class="fa fa-dribbble"></a>
+				</li>
+				<li class="behance"><a href=" " class="fa fa-behance"></a>
+				</li>
+				<li class="linked-in"><a href="#" class="fa fa-linkedin"></a>
+				</li>
 			</ul>
 
 		</div>
@@ -291,7 +310,7 @@
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>

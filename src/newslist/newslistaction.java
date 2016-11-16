@@ -2,6 +2,8 @@ package newslist;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
+import java.net.URLDecoder;
+import java.net.URLEncoder;
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
@@ -12,17 +14,17 @@ public class newslistaction {
 	private String date;
 	private String newstag;
 	private String newstitle;
-	
 	private Connection conn;
 	private PreparedStatement prestatement;
 	private ArrayList<newsitem> newsitems=new ArrayList<newsitem>();
-
 	public newslistaction(){
 		conn=new connection.conn().getCon();
 	}
 	
 	public String execute(){
 		newsitems=findnewsitemsbytag();
+		System.out.println(newsitems.get(0).getDate());
+		System.out.println(newstag);
 		if(newsitems.size()>0){
 			return "success";
 		}

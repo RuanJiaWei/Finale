@@ -1,3 +1,4 @@
+
 <%@ page language="java" import="java.util.*" pageEncoding="UTF-8"%>
 <%
 	String path = request.getContextPath();
@@ -41,42 +42,46 @@
 	<header class="header-area"> <nav
 		class="main-menu hidden-xs hidden-sm">
 	<ul class="menu-left pull-left">
-		<li><a href="biography.html">Biography</a></li>
-		<li class="menu-has-children"><a href="index.html">Home</a>
-			<ul>
-				<li><a href="index.html">Home 1</a></li>
-				<li><a href="index2.html">Home 2</a></li>
-				<li><a href="index3.html">Home 3</a></li>
-			</ul>
+		<li><a href="index.jsp">主页</a>
 		</li>
-		<li><a href="biography.html">Biography</a></li>
-
-		<li><a href="event.html">Event</a></li>
+		<li><a href="about.jsp">关于我们</a>
+		</li>
+		<li class="menu-has-children"><a href="about.jsp">国际交流</a>
+			<ul>
+				<li><a href="about.jsp">交流概况</a>
+				</li>
+				<li><a href="portfolio.jsp">交流项目</a>
+				</li>
+				<li><a href="learningandvisitingHIT.jsp">留学&来访工大</a>
+				</li>
+			</ul></li>
 	</ul>
 	<div class="pull-left logo-area">
 		<a href="index.html"><img src="images/hiticon.jpg" alt="Logo">
 		</a>
 	</div>
 	<ul class="menu-right pull-left">
-		<li class="menu-has-children"><a href="news.html">News</a>
+		<li class="menu-has-children"><a href="news.jsp">新闻</a>
 			<ul>
-				<li><a href="newsDetails.html">News Details</a></li>
-			</ul>
-		</li>
-		<li><a href="photo.html">Photos</a></li>
-		<li><a href="volunteer.html">Volunteer</a></li>
+				<li><a href="news.jsp">阅读新闻</a>
+				</li>
+			</ul></li> <
+		<li><a href="contact.jsp">联系我们</a></li>
+		<li><a href="login/index.jsp">登录</a></li>
+		<li><a href="login/setup.jsp" >注册</a></li>
 	</ul>
 	</nav>
 	<ul class="pull-right search-cart">
-		<li><a href="#"><i class="fa fa-search"></i> </a></li>
+		<li><a href="#"><i class="fa fa-search"></i> </a>
+		</li>
 		<li><a href="#"><i class="fa fa-shopping-basket"></i><span>(2)</span>
-		</a></li>
+		</a>
+		</li>
 		<li class="lang-select"><a href="#">en<i
 				class="fa fa-angle-down"></i> </a>
 			<div id="language">
 				<a href="#">En</a> <a href="#">Fr</a> <a href="#">Br</a>
-			</div>
-		</li>
+			</div></li>
 	</ul>
 	<div class="clearfix"></div>
 	</header>
@@ -127,7 +132,7 @@
 		<div class="row">
 			<div class="col-md-5 col-xs-12 col-sm-5">
 				<div class="event-img">
-					<img src="images/biography/post-thumb3.jpg" alt="">
+					<img src="images/t5.jpg" alt="">
 				</div>
 			</div>
 			<div class="col-md-7 col-xs-12 text-left col-sm-7">

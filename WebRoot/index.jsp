@@ -103,12 +103,18 @@
 			<div class="collapse navbar-collapse"
 				id="bs-example-navbar-collapse-1">
 				<ul class="nav navbar-nav navbar-center cl-effect-15">
-					<li><a href="index.jsp" class="active">主页</a></li>
-					<li><a href="news.jsp" data-hover="新闻">新闻</a></li>
-					<li><a href="about.jsp" data-hover="国际交流">国际交流</a></li>
-					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a></li>
-					<li><a href="login/index.jsp" data-hover="登录">登录</a></li>
-					<li><a href="login/setup.jsp" data-hover="注册">注册</a></li>
+					<li><a href="index.jsp" class="active">主页</a>
+					</li>
+					<li><a href="news.jsp" data-hover="新闻">新闻</a>
+					</li>
+					<li><a href="about.jsp" data-hover="国际交流">国际交流</a>
+					</li>
+					<li><a href="contact.jsp" data-hover="联系我们">联系我们</a>
+					</li>
+					<li><a href="login/index.jsp" data-hover="登录">登录</a>
+					</li>
+					<li><a href="login/setup.jsp" data-hover="注册">注册</a>
+					</li>
 				</ul>
 				<div class="clearfix"></div>
 			</div>
@@ -142,38 +148,43 @@
 					src="<%=basePath%>window/images/example/006.jpg" class="cube" /> </a>
 				<div class="label_text">
 					<p>俱怀逸兴壮思飞 ——哈工大与中国航天60年</p>
-				</div>
-			</li>
+				</div></li>
 			<li><a href="#cubeRandom"><img
 					src="<%=basePath%>window/images/example/007.jpg" class="cubeRandom" />
 			</a>
 				<div class="label_text">
 					<p>“紫丁香一号”卫星试验队“出征”荷兰</p>
-				</div>
-			</li>
+				</div></li>
 			<li><a href="#block"><img
 					src="<%=basePath%>window/images/example/008.jpg" class="block" />
 			</a>
 				<div class="label_text">
 					<p>面向百年 聚焦一流 加快推进教育综合改革 2016年暑期工作会议召开</p>
-				</div>
-			</li>
+				</div></li>
 			<li><a href="#cubeStop"><img
 					src="<%=basePath%>window/images/example/009.jpg" class="cubeStop" />
 			</a>
 				<div class="label_text">
 					<p>我校在环境光催化技术研究领域取得新成果</p>
-				</div>
-			</li>
+				</div></li>
 		</ul>
 	</div>
 
-
+	<div class="welcome-row">
+		<h1 class="agileits-title" style="text-align:center">
+			<a href="#"><span class="label label-default">欢迎</span> </a> <a
+				href="#"><span class="label label-primary">welcoming</span> </a> <a
+				href="#"><span class="label label-success">velkommentil</span> </a>
+			<a href="#"><span class="label label-info">Willkommen</span>
+			</a> <a href="#"><span class="label label-warning">Bienvenue</span>
+			</a> <a href="#"><span class="label label-danger">환영</span> </a>
+		</h1>
+	</div>
 
 
 	<div class="welcome">
 		<div class="container">
-			<h3 class="agileits-title">Welcome to</h3>
+
 			<div class="welcome-row">
 				<div class="col-md-4 welcome-grids">
 					<h4>Harbin Institute of Technology</h4>
@@ -194,61 +205,15 @@
 				</div>
 				<div class="clearfix"></div>
 			</div>
+			<div class="clearfix"></div>
 		</div>
 	</div>
 
 
-	<div class="services">
-		<div class="container">
-			<h3 class="agileits-title">Services</h3>
-			<div class="services-w3ls-row">
-				<div class="col-md-3 services-grids">
-					<div class="w3agile-servs-img">
-						<div class="icon-holder">
-							<span class="fa fa-gears icon" aria-hidden="true"></span>
-						</div>
-						<h4 class="mission">Fugiat Quo</h4>
-						<p class="description">Scelerisque Praesent</p>
-					</div>
-				</div>
-				<div class="col-md-3 services-grids">
-					<div class="w3agile-servs-img">
-						<div class="icon-holder">
-							<span class="fa fa-group icon" aria-hidden="true"></span>
-						</div>
-						<h4 class="mission">Voluptas</h4>
-						<p class="description">Scelerisque Praesent</p>
-					</div>
-				</div>
-				<div class="col-md-3 services-grids">
-					<div class="w3agile-servs-img">
-						<div class="icon-holder">
-							<span class="fa fa-briefcase icon" aria-hidden="true"></span>
-						</div>
-						<h4 class="mission">Join us</h4>
-						<p class="description">why choose HIT</p>
-					</div>
-				</div>
-				<div class="col-md-3 services-grids">
-					<div class="w3agile-servs-img">
-						<div class="icon-holder">
-							<span class="fa fa-list-alt icon" aria-hidden="true"></span>
-						</div>
-						<h4 class="mission">
-							<a href="contact.jsp">contact us</a>
-						</h4>
-						<p class="description">we will serve you</p>
-					</div>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
-	<!-- //services -->
-	<!-- features -->
+
 	<div class="features">
 		<div class="container">
-			<h3 class="agileits-title">Features</h3>
+			<h3 class="agileits-title">工大特色</h3>
 			<div class="features-row">
 				<div class="col-md-6 features-right">
 					<img src="images/img3.jpg" class="img-responsive" alt="" />
@@ -256,7 +221,9 @@
 				<div class="col-md-6 features-left">
 					<div class="features-grid">
 						<div class="col-xs-3 features-grid-left">
-							<i class="fa fa-check" aria-hidden="true"></i>
+							<h1>
+								<a href="#"><span class="label label-success">学科优势</span> </a>
+							</h1>
 						</div>
 						<div class="col-xs-9 features-grid-right">
 							<h4>国家重点学科</h4>
@@ -266,7 +233,9 @@
 					</div>
 					<div class="features-grid features-grid-mdl">
 						<div class="col-xs-3 features-grid-left">
-							<i class="fa fa-check" aria-hidden="true"></i>
+							<h1>
+								<a href="#"><span class="label label-info">职工概况</span> </a>
+							</h1>
 						</div>
 						<div class="col-xs-9 features-grid-right">
 							<h4>专任教师</h4>
@@ -276,7 +245,9 @@
 					</div>
 					<div class="features-grid">
 						<div class="col-xs-3 features-grid-left">
-							<i class="fa fa-check" aria-hidden="true"></i>
+							<h1>
+								<a href="#"><span class="label label-warning">综合排名</span> </a>
+							</h1>
 						</div>
 						<div class="col-xs-9 features-grid-right">
 							<h4>世界排名</h4>
@@ -297,23 +268,6 @@
 	</div>
 
 
-	<!--it is a test-->
-	<div class="test">
-		<div class="container">
-			<div class="test-row">
-				<div class="col-md-4 test-girds">
-					<p>hello world</p>
-				</div>
-				<div class="col-md-4 test-girds">
-					<h3>i am comming</h3>
-				</div>
-				<div class="col-md-4 test-girds">
-					<h4>okok</h4>
-				</div>
-				<div class="clearfix"></div>
-			</div>
-		</div>
-	</div>
 
 
 
@@ -325,7 +279,8 @@
 					China</li>
 				<li><i class="fa fa-phone" aria-hidden="true">+86-451-86412114</i>
 				<li><i class="fa fa-envelope" aria-hidden="true"></i><a
-					href="269077431@qq.com"> 269077431@qq.com</a></li>
+					href="269077431@qq.com"> 269077431@qq.com</a>
+				</li>
 			</ul>
 		</div>
 	</div>
@@ -339,7 +294,7 @@
 			</div>
 			<div class="footer-right">
 				<h2>
-					<a href="index.jsp">Knack</a>
+					<a href="index.jsp">back</a>
 				</h2>
 			</div>
 			<div class="clearfix"></div>
