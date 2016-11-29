@@ -94,14 +94,6 @@ public class test
 			return cmd;
 		}
 
-		public void setCmd(String cmd) {
-			this.cmd = cmd;
-		}
-
-		public String getExp() {
-			return exp;
-		}
-
 		public void setExp(String exp) {
 			this.exp = exp;
 		}
@@ -113,5 +105,14 @@ public class test
 		public void setExpression(String expression) {
 			this.expression = expression;
 		}
+		public void setCmd(String cmd) {
+			this.cmd = cmd;
+		}
+
+		public String getExp() {
+			return exp;
+		}
+
+
 		
 	}
