@@ -16,9 +16,7 @@ public class test
 		{	System.out.println(s);}}
 	
 	private static String simplify(String expression)
-	{	//ArrayList<IntegerString> arraylist = new ArrayList<IntegerString>();
-		//Map<String, Integer> map = new HashMap<String, Integer>();
-		StringBuilder stringbuff = new StringBuilder();
+	{	StringBuilder stringbuff = new StringBuilder();
 		String[] stringarray = expression.split("\\+");
 		
 		for (String str : stringarray)
