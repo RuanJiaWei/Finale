@@ -49,13 +49,7 @@ public class test
 					catch(NumberFormatException ex)
 					{	System.out.println("Invaild simplification!");
 						return;}}}
-			expression = exp;
-			String[] variable = cmd.substring(10).split(" ");
-			for (String element : variable) 
-			{	/*这段代码实现的功能是将赋值的值替换给原表达式中的变量*/
-				String[] replacement = element.split("=");
-				expression = expression.replaceAll(replacement[0], replacement[1]);}
-			simplify();return;}
+
 		
 		else if (string.startsWith("!d/d "))
 		{	String varible = string.substring(5);
@@ -64,7 +58,15 @@ public class test
 				System.out.println("Inavaild derivative!");
 				return;}
 			else
-			{	derivative();return;}}}
+			{	derivative();return;}}
+			
+			expression = exp;
+			String[] variable = cmd.substring(10).split(" ");
+			for (String element : variable) 
+			{	/*这段代码实现的功能是将赋值的值替换给原表达式中的变量*/
+				String[] replacement = element.split("=");
+				expression = expression.replaceAll(replacement[0], replacement[1]);}
+			simplify();return;}}
 
 	private static String simplify(String expression)
 	{	StringBuilder stringbuff = new StringBuilder();
