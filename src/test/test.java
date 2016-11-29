@@ -94,10 +94,6 @@ public class test
 			return cmd;
 		}
 
-		public void setExp(String exp) {
-			this.exp = exp;
-		}
-
 		public String getExpression() {
 			return expression;
 		}
