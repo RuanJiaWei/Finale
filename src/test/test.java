@@ -39,25 +39,6 @@ public class test
 				catch (Exception e)
 				{	/*varibles.add(element);*/}}
 		
-			//for (String var : varibles)
-			//{	stringbuff1.append(var);}
-			
-			//integerstring1.stringvarible = stringbuff1.toString();
-			//integerstring1.number = constant;
-			/*arraylist.add(integerstring1);*/}
-		
-		/*for (IntegerString intstr : arraylist)
-		{ 	String key = intstr.stringvarible;
-			int value = intstr.number;
-			if (map.containsKey(key)==false) 
-			{	map.put(key, value);}
-			else if (map.containsKey(key)==true) 
-			{	value += map.get(key);
-				map.put(key, value);}}*/
-		
-		//for (String keyinset : map.keySet())
-		//{	stringbuff.append(map.get(keyinset).toString() + keyinset + '+');}
-		
 		int len = stringbuff.length();
 		stringbuff.deleteCharAt(len - 1);
 		System.out.println(stringbuff.toString());
