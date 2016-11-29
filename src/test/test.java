@@ -4,9 +4,6 @@ import connection.conn;
 
 public class test 
 {
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) 
 	{	BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
 		String exp;
@@ -19,9 +16,7 @@ public class test
 		{	System.out.println(s);}}
 	
 	private static String simplify(String expression)
-	{	//ArrayList<IntegerString> arraylist = new ArrayList<IntegerString>();
-		//Map<String, Integer> map = new HashMap<String, Integer>();
-		StringBuilder stringbuff = new StringBuilder();
+	{	StringBuilder stringbuff = new StringBuilder();
 		String[] stringarray = expression.split("\\+");
 		
 		for (String str : stringarray)
@@ -38,25 +33,6 @@ public class test
 					constant *= number1;}
 				catch (Exception e)
 				{	/*varibles.add(element);*/}}
-		
-			//for (String var : varibles)
-			//{	stringbuff1.append(var);}
-			
-			//integerstring1.stringvarible = stringbuff1.toString();
-			//integerstring1.number = constant;
-			/*arraylist.add(integerstring1);*/}
-		
-		/*for (IntegerString intstr : arraylist)
-		{ 	String key = intstr.stringvarible;
-			int value = intstr.number;
-			if (map.containsKey(key)==false) 
-			{	map.put(key, value);}
-			else if (map.containsKey(key)==true) 
-			{	value += map.get(key);
-				map.put(key, value);}}*/
-		
-		//for (String keyinset : map.keySet())
-		//{	stringbuff.append(map.get(keyinset).toString() + keyinset + '+');}
 		
 		int len = stringbuff.length();
 		stringbuff.deleteCharAt(len - 1);
