@@ -4,9 +4,6 @@ import connection.conn;
 
 public class test 
 {
-	/**
-	 * @param args
-	 */
 	public static void main(String[] args) 
 	{	BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
 		String exp;
