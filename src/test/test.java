@@ -14,7 +14,10 @@ public class test
 		SP(exp);}
 
 	public void control() {
-		
+		i.cmd=cmd;
+		i.exp = exp;
+		i.expression = expression;
+		i.instruction();
 		expression e = new expression();
 		instruction i = new instruction();
 		e.exp=exp;
@@ -23,10 +26,7 @@ public class test
 		{
 			return;
 		}
-		i.cmd=cmd;
-		i.exp = exp;
-		i.expression = expression;
-		i.instruction();
+		
 	}
 	
 	public static void validate(String string) throws IOException 
