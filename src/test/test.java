@@ -12,11 +12,22 @@ public class test
 		String exp;
 		exp = buff.readLine();
 		SP(exp);}
-	 
-	public static void SP(String str)
-	{	String[] stringarray = str.split("\\+");
-		for(String s: stringarray)
-		{	System.out.println(s);}}
+
+	public void control() {
+		
+		expression e = new expression();
+		instruction i = new instruction();
+		e.exp=exp;
+		e.expression = exp;
+		if (!e.expression())
+		{
+			return;
+		}
+		i.cmd=cmd;
+		i.exp = exp;
+		i.expression = expression;
+		i.instruction();
+	}
 	
 	public static void validate(String string) throws IOException 
 	{	if (string.startsWith("!simplify"))//化简指令
@@ -54,14 +65,7 @@ public class test
 				return;}
 			else
 			{	derivative();return;}}}
-	
-	public void test() throws IOException 
-	{	lab1 lab=new lab1();
-		lab.exp="x*x+y*x+z";lab.cmd="!simplify x=5 y=2";
-		lab.validate(lab.cmd);
-		String result=lab.simplify();
-		assertEquals("35+1z",result);}
-	
+
 	private static String simplify(String expression)
 	{	StringBuilder stringbuff = new StringBuilder();
 		String[] stringarray = expression.split("\\+");
