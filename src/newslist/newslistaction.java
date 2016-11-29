@@ -54,9 +54,6 @@ public class newslistaction {
 		}
 	}
 	
-
-	
-	
 	public String getDate() {
 		return date;
 	}

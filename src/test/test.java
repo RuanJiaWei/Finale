@@ -90,12 +90,28 @@ public class test
 		System.out.println(stringbuff.toString());
 		return stringbuff.toString();}
 		
-	
+		public String getCmd() {
+			return cmd;
+		}
+
+		public void setCmd(String cmd) {
+			this.cmd = cmd;
+		}
+
+		public String getExp() {
+			return exp;
+		}
+
+		public void setExp(String exp) {
+			this.exp = exp;
+		}
+
+		public String getExpression() {
+			return expression;
+		}
+
+		public void setExpression(String expression) {
+			this.expression = expression;
+		}
+		
 	}
-	
-	
-	
-
-	
-	
-
