@@ -52,6 +52,13 @@ public class test
 			else
 			{	derivative();return;}}}
 	
+	public void test() throws IOException 
+	{	lab1 lab=new lab1();
+		lab.exp="x*x+y*x+z";lab.cmd="!simplify x=5 y=2";
+		lab.validate(lab.cmd);
+		String result=lab.simplify();
+		assertEquals("35+1z",result);}
+	
 	private static String simplify(String expression)
 	{	StringBuilder stringbuff = new StringBuilder();
 		String[] stringarray = expression.split("\\+");
