@@ -15,13 +15,13 @@ public class test
 
 	public void control() {
 		i.cmd=cmd;
-		i.exp = exp;
+		//i.exp = exp;
 		i.expression = expression;
 		i.instruction();
 		expression e = new expression();
 		instruction i = new instruction();
 		e.exp=exp;
-		e.expression = exp;
+		//e.expression = exp;
 		if (!e.expression())
 		{
 			return;
@@ -72,7 +72,7 @@ public class test
 	{	StringBuilder stringbuff = new StringBuilder();
 		String[] stringarray = expression.split("\\+");
 		
-		for (String str : stringarray)
+		/*for (String str : stringarray)
 		{ 	int constant = 1;
 			int number1;
 			//List<String> varibles = new ArrayList<String>();
